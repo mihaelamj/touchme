@@ -14,6 +14,7 @@
 		A978BB331C8E9A8300F06064 /* touchmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB321C8E9A8300F06064 /* touchmeTests.m */; };
 		A978BB3E1C8E9A8300F06064 /* touchmeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB3D1C8E9A8300F06064 /* touchmeUITests.m */; };
 		A978BB4E1C8E9D4C00F06064 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A978BB501C8E9D4C00F06064 /* Localizable.strings */; };
+		A978BB531C8E9EBF00F06064 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A978BB521C8E9EBF00F06064 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A978BB4B1C8E9B0500F06064 /* touchme.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = touchme.pch; sourceTree = "<group>"; };
 		A978BB4F1C8E9D4C00F06064 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A978BB511C8E9DAB00F06064 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A978BB521C8E9EBF00F06064 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		A978BB171C8E9A8300F06064 /* touchme */ = {
 			isa = PBXGroup;
 			children = (
+				A978BB521C8E9EBF00F06064 /* Default-568h@2x.png */,
 				A978BB1B1C8E9A8300F06064 /* AppDelegate.h */,
 				A978BB1C1C8E9A8300F06064 /* AppDelegate.m */,
 				A978BB1E1C8E9A8300F06064 /* ViewController.h */,
@@ -246,6 +249,7 @@
 			files = (
 				A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */,
 				A978BB4E1C8E9D4C00F06064 /* Localizable.strings in Resources */,
+				A978BB531C8E9EBF00F06064 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -394,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,6 +499,7 @@
 				A978BB441C8E9A8300F06064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A978BB451C8E9A8300F06064 /* Build configuration list for PBXNativeTarget "touchmeTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				A978BB471C8E9A8300F06064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A978BB481C8E9A8300F06064 /* Build configuration list for PBXNativeTarget "touchmeUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				A978BB4A1C8E9A8300F06064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
