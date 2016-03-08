@@ -10,11 +10,10 @@
 		A978BB1A1C8E9A8300F06064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB191C8E9A8300F06064 /* main.m */; };
 		A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB1C1C8E9A8300F06064 /* AppDelegate.m */; };
 		A978BB201C8E9A8300F06064 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB1F1C8E9A8300F06064 /* ViewController.m */; };
-		A978BB231C8E9A8300F06064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A978BB211C8E9A8300F06064 /* Main.storyboard */; };
 		A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A978BB241C8E9A8300F06064 /* Assets.xcassets */; };
-		A978BB281C8E9A8300F06064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A978BB261C8E9A8300F06064 /* LaunchScreen.storyboard */; };
 		A978BB331C8E9A8300F06064 /* touchmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB321C8E9A8300F06064 /* touchmeTests.m */; };
 		A978BB3E1C8E9A8300F06064 /* touchmeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB3D1C8E9A8300F06064 /* touchmeUITests.m */; };
+		A978BB4E1C8E9D4C00F06064 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A978BB501C8E9D4C00F06064 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +40,7 @@
 		A978BB1C1C8E9A8300F06064 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A978BB1E1C8E9A8300F06064 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A978BB1F1C8E9A8300F06064 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A978BB221C8E9A8300F06064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A978BB241C8E9A8300F06064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A978BB271C8E9A8300F06064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A978BB291C8E9A8300F06064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A978BB2E1C8E9A8300F06064 /* touchmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = touchmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978BB321C8E9A8300F06064 /* touchmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = touchmeTests.m; sourceTree = "<group>"; };
@@ -51,6 +48,9 @@
 		A978BB391C8E9A8300F06064 /* touchmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = touchmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978BB3D1C8E9A8300F06064 /* touchmeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = touchmeUITests.m; sourceTree = "<group>"; };
 		A978BB3F1C8E9A8300F06064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A978BB4B1C8E9B0500F06064 /* touchme.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = touchme.pch; sourceTree = "<group>"; };
+		A978BB4F1C8E9D4C00F06064 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A978BB511C8E9DAB00F06064 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +105,11 @@
 				A978BB1C1C8E9A8300F06064 /* AppDelegate.m */,
 				A978BB1E1C8E9A8300F06064 /* ViewController.h */,
 				A978BB1F1C8E9A8300F06064 /* ViewController.m */,
-				A978BB211C8E9A8300F06064 /* Main.storyboard */,
 				A978BB241C8E9A8300F06064 /* Assets.xcassets */,
-				A978BB261C8E9A8300F06064 /* LaunchScreen.storyboard */,
 				A978BB291C8E9A8300F06064 /* Info.plist */,
 				A978BB181C8E9A8300F06064 /* Supporting Files */,
+				A978BB4B1C8E9B0500F06064 /* touchme.pch */,
+				A978BB501C8E9D4C00F06064 /* Localizable.strings */,
 			);
 			path = touchme;
 			sourceTree = "<group>";
@@ -225,6 +225,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hr,
 			);
 			mainGroup = A978BB0C1C8E9A8300F06064;
 			productRefGroup = A978BB161C8E9A8300F06064 /* Products */;
@@ -243,9 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A978BB281C8E9A8300F06064 /* LaunchScreen.storyboard in Resources */,
 				A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */,
-				A978BB231C8E9A8300F06064 /* Main.storyboard in Resources */,
+				A978BB4E1C8E9D4C00F06064 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,20 +308,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A978BB211C8E9A8300F06064 /* Main.storyboard */ = {
+		A978BB501C8E9D4C00F06064 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A978BB221C8E9A8300F06064 /* Base */,
+				A978BB4F1C8E9D4C00F06064 /* en */,
+				A978BB511C8E9DAB00F06064 /* hr */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A978BB261C8E9A8300F06064 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A978BB271C8E9A8300F06064 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +406,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/touchme/touchme.pch";
 				INFOPLIST_FILE = touchme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hr.token.touchme;
@@ -424,6 +419,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/touchme/touchme.pch";
 				INFOPLIST_FILE = touchme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hr.token.touchme;
