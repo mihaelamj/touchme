@@ -44,6 +44,9 @@
 		A9AE4D961C8EC1E9009F86B2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D891C8EC1E8009F86B2 /* NSArray+MASAdditions.m */; };
 		A9AE4D971C8EC1E9009F86B2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D8C1C8EC1E8009F86B2 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		A9AE4D981C8EC1E9009F86B2 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D8E1C8EC1E8009F86B2 /* View+MASAdditions.m */; };
+		A9AE4D9C1C8EC285009F86B2 /* BaseSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D9B1C8EC285009F86B2 /* BaseSubview.m */; };
+		A9AE4DA11C8EC30E009F86B2 /* CellSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4DA01C8EC30E009F86B2 /* CellSubview.m */; };
+		A9AE4DA51C8EC416009F86B2 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4DA41C8EC416009F86B2 /* BaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +144,12 @@
 		A9AE4D8D1C8EC1E8009F86B2 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Vendor/Masonry/Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		A9AE4D8E1C8EC1E8009F86B2 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Vendor/Masonry/Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		A9AE4D8F1C8EC1E8009F86B2 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Vendor/Masonry/Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		A9AE4D9A1C8EC285009F86B2 /* BaseSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseSubview.h; path = UI/Views/Base/BaseSubview.h; sourceTree = "<group>"; };
+		A9AE4D9B1C8EC285009F86B2 /* BaseSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseSubview.m; path = UI/Views/Base/BaseSubview.m; sourceTree = "<group>"; };
+		A9AE4D9F1C8EC30E009F86B2 /* CellSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellSubview.h; path = UI/Views/Cell/CellSubview.h; sourceTree = "<group>"; };
+		A9AE4DA01C8EC30E009F86B2 /* CellSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellSubview.m; path = UI/Views/Cell/CellSubview.m; sourceTree = "<group>"; };
+		A9AE4DA31C8EC416009F86B2 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseView.h; path = UI/Views/Main/BaseView.h; sourceTree = "<group>"; };
+		A9AE4DA41C8EC416009F86B2 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseView.m; path = UI/Views/Main/BaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				A9AE4D051C8EA155009F86B2 /* Controller */,
+				A9AE4D9D1C8EC28A009F86B2 /* Views */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -418,6 +428,43 @@
 			name = Masonry;
 			sourceTree = "<group>";
 		};
+		A9AE4D9D1C8EC28A009F86B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE4DA61C8EC41B009F86B2 /* MainViews */,
+				A9AE4D9E1C8EC293009F86B2 /* Subviews */,
+				A9AE4DA21C8EC313009F86B2 /* CellSubviews */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A9AE4D9E1C8EC293009F86B2 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE4D9A1C8EC285009F86B2 /* BaseSubview.h */,
+				A9AE4D9B1C8EC285009F86B2 /* BaseSubview.m */,
+			);
+			name = Subviews;
+			sourceTree = "<group>";
+		};
+		A9AE4DA21C8EC313009F86B2 /* CellSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE4D9F1C8EC30E009F86B2 /* CellSubview.h */,
+				A9AE4DA01C8EC30E009F86B2 /* CellSubview.m */,
+			);
+			name = CellSubviews;
+			sourceTree = "<group>";
+		};
+		A9AE4DA61C8EC41B009F86B2 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE4DA31C8EC416009F86B2 /* BaseView.h */,
+				A9AE4DA41C8EC416009F86B2 /* BaseView.m */,
+			);
+			name = MainViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -562,14 +609,17 @@
 				A9AE4D981C8EC1E9009F86B2 /* View+MASAdditions.m in Sources */,
 				A9AE4D381C8EB8BC009F86B2 /* UIColor+StandardColors.m in Sources */,
 				A9AE4D911C8EC1E9009F86B2 /* MASConstraint.m in Sources */,
+				A9AE4DA51C8EC416009F86B2 /* BaseView.m in Sources */,
 				A9AE4D121C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m in Sources */,
 				A9AE4D951C8EC1E9009F86B2 /* MASViewConstraint.m in Sources */,
+				A9AE4DA11C8EC30E009F86B2 /* CellSubview.m in Sources */,
 				A9AE4D0B1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m in Sources */,
 				A9AE4D711C8EC185009F86B2 /* MBProgressHUD.m in Sources */,
 				A978BB1A1C8E9A8300F06064 /* main.m in Sources */,
 				A9AE4D721C8EC185009F86B2 /* README.mdown in Sources */,
 				A9AE4D421C8EBF36009F86B2 /* UIImage+Colored.m in Sources */,
 				A9AE4D341C8EB89B009F86B2 /* NSString+MethodList.m in Sources */,
+				A9AE4D9C1C8EC285009F86B2 /* BaseSubview.m in Sources */,
 				A9AE4D3F1C8EBAF9009F86B2 /* MMJColorItem.m in Sources */,
 				A9AE4D211C8EB624009F86B2 /* UIColor+Pantone.m in Sources */,
 				A9AE4D931C8EC1E9009F86B2 /* MASLayoutConstraint.m in Sources */,
