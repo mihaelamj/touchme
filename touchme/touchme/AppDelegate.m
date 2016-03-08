@@ -8,7 +8,14 @@
 
 #import "AppDelegate.h"
 
+//starting View Controller
+
+#import "HomeViewController.h"
+
 @interface AppDelegate ()
+
+
+@property (nonatomic, strong) UINavigationController *navigationController;
 
 @end
 
@@ -22,7 +29,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     //set root view controller
-    self.window.rootViewController = [[UIViewController alloc] init];
+    self.window.rootViewController = self.navigationController;
     
     [self.window makeKeyAndVisible];
     
@@ -49,6 +56,19 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark -
+#pragma mark Properties
+
+- (UINavigationController *)navigationController
+{
+    if (!_navigationController) {
+        HomeViewController *homeVC = [[HomeViewController alloc] init];
+        _navigationController = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    }
+    
+    return _navigationController;
 }
 
 
