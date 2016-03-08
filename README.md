@@ -70,7 +70,7 @@ I also add a previewingContext property on my base View Controller, to be able t
 @end
 ```
 
-And use it in viewDidAppear
+And use it in `viewDidAppear`
 
 ```objective-c
 - (void)viewDidAppear:(BOOL)animated
@@ -82,7 +82,7 @@ And use it in viewDidAppear
 }
 ```
 
-This way, all view controller that inherit from BaseViewController will be registered previewing, if they have that ability.
+This way, all view controllers that inherit from `BaseViewController` will be registered previewing, if they have that ability.
 
 This is one example where inheritance is a good usecase in Objective C.
 
