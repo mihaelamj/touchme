@@ -10,4 +10,6 @@
 
 @interface UIViewController (CheckFor3DTouch)
 
+- (void)checkAndApply3DTouch:(id)previewingContext;
+
 @end

@@ -10,4 +10,8 @@
 
 @interface UIApplication (ThreeDSupport)
 
+//logic
++ (BOOL)hasUIApplicationShortcutItemClass;
++ (BOOL)isThreeDTouchDevice;
+
 @end

@@ -17,6 +17,7 @@
 		A9AE4D031C8EA128009F86B2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D021C8EA128009F86B2 /* HomeViewController.m */; };
 		A9AE4D081C8EA172009F86B2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D071C8EA172009F86B2 /* BaseViewController.m */; };
 		A9AE4D0B1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D0A1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m */; };
+		A9AE4D121C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D111C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		A9AE4D071C8EA172009F86B2 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = UI/Controllers/BaseViewController.m; sourceTree = "<group>"; };
 		A9AE4D091C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+CheckFor3DTouch.h"; path = "Categories/ViewController/UIViewController+CheckFor3DTouch.h"; sourceTree = "<group>"; };
 		A9AE4D0A1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CheckFor3DTouch.m"; path = "Categories/ViewController/UIViewController+CheckFor3DTouch.m"; sourceTree = "<group>"; };
+		A9AE4D101C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+ThreeDSupport.h"; path = "Categories/Application/UIApplication+ThreeDSupport.h"; sourceTree = "<group>"; };
+		A9AE4D111C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+ThreeDSupport.m"; path = "Categories/Application/UIApplication+ThreeDSupport.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +170,8 @@
 		A9AE4D0C1C8EA412009F86B2 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				A9AE4D091C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.h */,
-				A9AE4D0A1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m */,
+				A9AE4D131C8EA5C1009F86B2 /* Application */,
+				A9AE4D0F1C8EA55C009F86B2 /* ViewController */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -189,6 +192,24 @@
 				A978BB1B1C8E9A8300F06064 /* AppDelegate.h */,
 				A978BB1C1C8E9A8300F06064 /* AppDelegate.m */,
 				A978BB291C8E9A8300F06064 /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		A9AE4D0F1C8EA55C009F86B2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE4D091C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.h */,
+				A9AE4D0A1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A9AE4D131C8EA5C1009F86B2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE4D101C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.h */,
+				A9AE4D111C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -326,6 +347,7 @@
 			files = (
 				A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */,
 				A9AE4D081C8EA172009F86B2 /* BaseViewController.m in Sources */,
+				A9AE4D121C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m in Sources */,
 				A9AE4D0B1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m in Sources */,
 				A978BB1A1C8E9A8300F06064 /* main.m in Sources */,
 				A9AE4D031C8EA128009F86B2 /* HomeViewController.m in Sources */,

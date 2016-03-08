@@ -8,6 +8,9 @@
 
 #import "BaseViewController.h"
 
+//3D Touch Checking
+#import "UIViewController+CheckFor3DTouch.h"
+
 @interface BaseViewController ()
 
 @end
@@ -23,6 +26,14 @@
     
     //move content below navigation bar
     self.edgesForExtendedLayout = UIRectEdgeNone;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    //check for 3D Touch
+    [self checkAndApply3DTouch:self.previewingContext];
 }
 
 @end
