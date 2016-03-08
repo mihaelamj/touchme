@@ -86,6 +86,27 @@ This way, all view controllers that inherit from `BaseViewController` will be re
 
 This is one example where inheritance is a good usecase in Objective C.
 
-##Adding Shortcut Items
+##Adding Quick Actions
+
+Quick Actions enable user  to quickly jump into a specific section of the app just by pressing down on the app icon. 
+
+There are two kinds of Quick Actions:
+
+* Static defined in `Info.plist` in `UIApplicationShortcutItems` array.
+* Dynamic, created in code.
+
+Both types of quick action can display up to two lines of text along with an optional icon.
+
+###Static Actions
+
+Static Actions have one advantage over dynamic ones that they are available immediately. 
+Dynamic actions require that the application is run at leat once.
+
+
+###Dynamic Actions
+They allow you to add actions that are specific to the user.
+Like the last image they took or similar.
+If the user took no images, that action can be removed.
+
 
 

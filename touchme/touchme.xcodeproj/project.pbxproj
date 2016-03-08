@@ -18,6 +18,11 @@
 		A9AE4D081C8EA172009F86B2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D071C8EA172009F86B2 /* BaseViewController.m */; };
 		A9AE4D0B1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D0A1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m */; };
 		A9AE4D121C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D111C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m */; };
+		A9AE4D161C8EB276009F86B2 /* UIColor+Copic.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D151C8EB276009F86B2 /* UIColor+Copic.m */; };
+		A9AE4D1B1C8EB4E8009F86B2 /* UIColor+Html.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D1A1C8EB4E8009F86B2 /* UIColor+Html.m */; };
+		A9AE4D211C8EB624009F86B2 /* UIColor+Pantone.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D201C8EB624009F86B2 /* UIColor+Pantone.m */; };
+		A9AE4D271C8EB732009F86B2 /* UIColor+Crayon.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D261C8EB732009F86B2 /* UIColor+Crayon.m */; };
+		A9AE4D2A1C8EB73B009F86B2 /* UIColor+Crayola.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE4D291C8EB73B009F86B2 /* UIColor+Crayola.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,16 @@
 		A9AE4D0A1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CheckFor3DTouch.m"; path = "Categories/ViewController/UIViewController+CheckFor3DTouch.m"; sourceTree = "<group>"; };
 		A9AE4D101C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+ThreeDSupport.h"; path = "Categories/Application/UIApplication+ThreeDSupport.h"; sourceTree = "<group>"; };
 		A9AE4D111C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+ThreeDSupport.m"; path = "Categories/Application/UIApplication+ThreeDSupport.m"; sourceTree = "<group>"; };
+		A9AE4D141C8EB276009F86B2 /* UIColor+Copic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Copic.h"; path = "Categories/Color/Colors/UIColor+Copic.h"; sourceTree = "<group>"; };
+		A9AE4D151C8EB276009F86B2 /* UIColor+Copic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Copic.m"; path = "Categories/Color/Colors/UIColor+Copic.m"; sourceTree = "<group>"; };
+		A9AE4D191C8EB4E8009F86B2 /* UIColor+Html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Html.h"; path = "Categories/Color/Colors/UIColor+Html.h"; sourceTree = "<group>"; };
+		A9AE4D1A1C8EB4E8009F86B2 /* UIColor+Html.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Html.m"; path = "Categories/Color/Colors/UIColor+Html.m"; sourceTree = "<group>"; };
+		A9AE4D1F1C8EB624009F86B2 /* UIColor+Pantone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Pantone.h"; path = "Categories/Color/Colors/UIColor+Pantone.h"; sourceTree = "<group>"; };
+		A9AE4D201C8EB624009F86B2 /* UIColor+Pantone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Pantone.m"; path = "Categories/Color/Colors/UIColor+Pantone.m"; sourceTree = "<group>"; };
+		A9AE4D251C8EB732009F86B2 /* UIColor+Crayon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Crayon.h"; path = "Categories/Color/Colors/UIColor+Crayon.h"; sourceTree = "<group>"; };
+		A9AE4D261C8EB732009F86B2 /* UIColor+Crayon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Crayon.m"; path = "Categories/Color/Colors/UIColor+Crayon.m"; sourceTree = "<group>"; };
+		A9AE4D281C8EB73B009F86B2 /* UIColor+Crayola.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Crayola.h"; path = "Categories/Color/Colors/UIColor+Crayola.h"; sourceTree = "<group>"; };
+		A9AE4D291C8EB73B009F86B2 /* UIColor+Crayola.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Crayola.m"; path = "Categories/Color/Colors/UIColor+Crayola.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +185,7 @@
 		A9AE4D0C1C8EA412009F86B2 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				A9AE4D171C8EB289009F86B2 /* Color */,
 				A9AE4D131C8EA5C1009F86B2 /* Application */,
 				A9AE4D0F1C8EA55C009F86B2 /* ViewController */,
 			);
@@ -212,6 +228,31 @@
 				A9AE4D111C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		A9AE4D171C8EB289009F86B2 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE4D181C8EB296009F86B2 /* Colors */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		A9AE4D181C8EB296009F86B2 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE4D1F1C8EB624009F86B2 /* UIColor+Pantone.h */,
+				A9AE4D201C8EB624009F86B2 /* UIColor+Pantone.m */,
+				A9AE4D191C8EB4E8009F86B2 /* UIColor+Html.h */,
+				A9AE4D1A1C8EB4E8009F86B2 /* UIColor+Html.m */,
+				A9AE4D141C8EB276009F86B2 /* UIColor+Copic.h */,
+				A9AE4D151C8EB276009F86B2 /* UIColor+Copic.m */,
+				A9AE4D251C8EB732009F86B2 /* UIColor+Crayon.h */,
+				A9AE4D261C8EB732009F86B2 /* UIColor+Crayon.m */,
+				A9AE4D281C8EB73B009F86B2 /* UIColor+Crayola.h */,
+				A9AE4D291C8EB73B009F86B2 /* UIColor+Crayola.m */,
+			);
+			name = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,7 +391,12 @@
 				A9AE4D121C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m in Sources */,
 				A9AE4D0B1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m in Sources */,
 				A978BB1A1C8E9A8300F06064 /* main.m in Sources */,
+				A9AE4D211C8EB624009F86B2 /* UIColor+Pantone.m in Sources */,
+				A9AE4D161C8EB276009F86B2 /* UIColor+Copic.m in Sources */,
+				A9AE4D2A1C8EB73B009F86B2 /* UIColor+Crayola.m in Sources */,
+				A9AE4D1B1C8EB4E8009F86B2 /* UIColor+Html.m in Sources */,
 				A9AE4D031C8EA128009F86B2 /* HomeViewController.m in Sources */,
+				A9AE4D271C8EB732009F86B2 /* UIColor+Crayon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
