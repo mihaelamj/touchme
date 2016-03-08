@@ -60,7 +60,7 @@ That is best done in categories on UIViewController and UIApplication.
 }
 ```
 
-I also add a previewingContext property on my base View Controller, to be able to react to 3D touch availability changing (like if the user disables it).
+I also add a `previewingContext` property on my `BaseViewController`, to be able to react to 3D touch availability changing (like if the user disables it).
 
 ```objective-c
 @interface BaseViewController : UIViewController
@@ -86,6 +86,6 @@ This way, all view controllers that inherit from `BaseViewController` will be re
 
 This is one example where inheritance is a good usecase in Objective C.
 
-
+##Adding Shortcut Items
 
 

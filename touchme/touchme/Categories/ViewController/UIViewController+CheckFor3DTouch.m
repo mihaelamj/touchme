@@ -21,13 +21,13 @@
     // register for 3D Touch (if available)
     if ([UIApplication isThreeDTouchDevice]) {
         previewingContext = [self registerForPreviewingWithDelegate:(id)self sourceView:self.view];
-        MMJLog(@"3D Touch is available! :)!");
+        MMJLog(@"3D Touch is available! :)");
     } else {
         if (previewingContext) {
             [self unregisterForPreviewingWithContext:previewingContext];
             previewingContext = nil;
         }
-        MMJLog(@"3D Touch is not available on this device. :( !");
+        MMJLog(@"3D Touch is not available on this device. :(");
     }
 }
 
