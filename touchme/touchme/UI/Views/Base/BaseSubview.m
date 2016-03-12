@@ -13,10 +13,16 @@
 #pragma mark -
 #pragma mark Init
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithOptions:(NSInteger)options
+{
+    return [self initWithFrame:CGRectZero];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame options:(NSInteger)options;
 {
     self = [super initWithFrame:frame];
     if (self) {
+        _options = options;
         [self beforeAddCustomSubviews];
         [self addCustomSubviews];
         [self setSubviewConstraints];

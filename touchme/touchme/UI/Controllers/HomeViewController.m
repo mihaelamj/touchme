@@ -25,6 +25,9 @@
 //sizes
 #import "TMSizes.h"
 
+//style
+#import "UILabel+TMStyle.h"
+
 //cell identifier
 static NSString * const kHomeItemCellIdentifier = @"HomeItemCell";
 
@@ -106,6 +109,7 @@ static NSString * const kHomeItemCellIdentifier = @"HomeItemCell";
             cell.textLabel.text = item.name;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.imageView.image = item.image;
+            [cell.textLabel applyStyle:TMLabelStyle_VeryBigTitle];
         };
         _dataSource = [[ArrayDataSource alloc] initWithArray:self.items cellIdentifier:kHomeItemCellIdentifier configureCellBlock:configureCell];
     }

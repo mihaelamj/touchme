@@ -22,3 +22,9 @@
 "HomeItemType_TableView Title" = "Table View";
 "HomeItemType_CollectionView Title" = "Collection View";
 "HomeItemType_View Title" = "Plain View";
+
+//Subviews
+"Color Image View Accessibility Label" = "Color Image View";
+"Color Name Label Accessibility Label" = "Color Name Label";
+"ColorHex Label Accessibility Label" = "Color Hex Label";
+"Palette Name Label Accessibility Label" = "Palette Name Label";

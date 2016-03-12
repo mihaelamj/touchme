@@ -11,6 +11,11 @@
 //auto layout
 #import "Masonry.h"
 
+//style
+#import "UILabel+TMStyle.h"
+#import "UIFont+TMStyle.h"
+#import "UIColor+TMStyle.h"
+
 @interface BaseView : UIView
 
 @end

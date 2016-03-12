@@ -11,6 +11,11 @@
 //auto layout
 #import "Masonry.h"
 
+//style
+#import "UILabel+TMStyle.h"
+#import "UIFont+TMStyle.h"
+#import "UIColor+TMStyle.h"
+
 @interface BaseSubview : UIView
 
 //public
@@ -28,5 +33,11 @@
 - (void)beforeAddCustomSubviews;
 - (void)addCustomSubviews;
 - (void)setSubviewConstraints;
+
+@property (nonatomic) NSInteger options;
+
+//initializers
+- (instancetype)initWithFrame:(CGRect)frame options:(NSInteger)options;
+- (instancetype)initWithOptions:(NSInteger)options;
 
 @end

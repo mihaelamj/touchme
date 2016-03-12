@@ -10,12 +10,16 @@
 
 @implementation BaseView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+#pragma mark -
+#pragma mark Init
+
+- (instancetype)init;
+{
+    self = [super init];
+    if (self) {
+        self.accessibilityLabel = NSStringFromClass([self class]);
+    }
+    return self;
 }
-*/
 
 @end
