@@ -27,4 +27,25 @@
     return image;
 }
 
+- (UIImage *)colorize:(UIColor *)color
+{
+    UIGraphicsBeginImageContextWithOptions(self.size, 0, [UIScreen mainScreen].scale);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, 0, self.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    
+    CGRect rect = CGRectMake(0,0,self.size.width,self.size.height);
+    CGContextSetBlendMode(context, kCGBlendModeNormal);
+    [color setFill];
+    CGContextFillRect(context, rect);
+    
+    CGContextSetBlendMode(context, kCGBlendModeDestinationIn);
+    CGContextDrawImage(context, rect, self.CGImage);
+    
+    UIImage *colorizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return colorizedImage;
+}
+
 @end

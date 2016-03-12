@@ -14,6 +14,9 @@
 //block types
 #import "BlockTypes.h"
 
+//for UIImage
+#import <UIKit/UIKit.h>
+
 @interface HomeItem : NSObject
 
 - (instancetype)initWithType:(HomeItemType)type;
@@ -22,7 +25,7 @@
 
 @property (nonatomic, readonly) HomeItemType type;
 @property (nonatomic, strong, readonly) NSString *name;
-@property (nonatomic, strong, readonly) NSString *imageName;
+@property (nonatomic, strong, readonly) UIImage *image;
 
 @property (nonatomic,copy) SimpleBlock actionBlock;
 

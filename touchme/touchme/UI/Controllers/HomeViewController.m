@@ -14,12 +14,21 @@
 //model
 #import "HomeItem.h"
 
+//data source
+#import "ArrayDataSource.h"
+
+//cell identifier
+static NSString * const kHomeItemCellIdentifier = @"HomeItemCell";
+
 @interface HomeViewController ()
 
 @property (nonatomic, strong) HomeView *mainView;
 
 //items
 @property (nonatomic, strong) NSArray *items;
+
+//data source
+@property (nonatomic, strong) ArrayDataSource *dataSource;
 
 @end
 
@@ -55,6 +64,23 @@
         _items = [HomeItem itemArray];
     }
     return _items;
+}
+
+- (ArrayDataSource *)dataSource
+{
+    if (!_dataSource) {
+        
+        //make customize cell bloack
+        void (^configureCell)(UITableViewCell *, HomeItem *) = ^(UITableViewCell *cell, HomeItem *item) {
+            //do the thing with cell
+            cell.textLabel.text = item.name;
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.imageView.image = item.image;
+        };
+        _dataSource = [[ArrayDataSource alloc] initWithArray:self.items cellIdentifier:kHomeItemCellIdentifier configureCellBlock:configureCell];
+    }
+    
+    return _dataSource;
 }
 
 #pragma mark View

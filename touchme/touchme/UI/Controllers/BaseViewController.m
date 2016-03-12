@@ -18,6 +18,29 @@
 @implementation BaseViewController
 
 #pragma mark -
+#pragma mark Init
+
+- (instancetype)initWithParams:(NSDictionary *)params modal:(BOOL)modal
+{
+    self = [super init];
+    if (self) {
+        _modal = modal;
+        _parentController = nil;
+        _isEmbeddedController = NO;
+        [self handleParams:params];
+    }
+    return self;
+}
+
+#pragma mark -
+#pragma mark Public Templates
+
+- (void)handleParams:(NSDictionary *)params
+{
+    //
+}
+
+#pragma mark -
 #pragma mark View Lifecycle
 
 - (void)viewDidLoad

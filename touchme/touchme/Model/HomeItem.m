@@ -11,6 +11,20 @@
 //string helper
 #import "NSString+HomeItemType.h"
 
+//sizes
+#import "TMSizes.h"
+
+//image helpers
+#import "UIImage+Colored.h"
+#import "UIImage+Sizing.h"
+
+@interface HomeItem ()
+
+@property (nonatomic, strong) NSString *imageName;
+@property (nonatomic, strong, readwrite) UIImage *image;
+
+@end
+
 @implementation HomeItem
 
 #pragma mark -
@@ -41,6 +55,19 @@
     }
     
     return [NSArray arrayWithArray:items];
+}
+
+#pragma mark -
+#pragma mark Public Properties
+
+- (UIImage *)image
+{
+    if (!_image) {
+        _image = [UIImage imageNamed:self.imageName];
+        _image = [_image colorize:[UIColor blueColor]];
+        _image = [_image scaledToSize:CGSizeMake(kHomeItemImageSize, kHomeItemImageSize)];
+    }
+    return _image;
 }
 
 #pragma mark -

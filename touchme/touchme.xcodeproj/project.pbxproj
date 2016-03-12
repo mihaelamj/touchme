@@ -11,6 +11,12 @@
 		A90D16621C944CF4003C4FFC /* NSString+HomeItemType.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16611C944CF4003C4FFC /* NSString+HomeItemType.m */; };
 		A90D16651C94539F003C4FFC /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16641C94539F003C4FFC /* HomeView.m */; };
 		A90D16691C9456B7003C4FFC /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16681C9456B7003C4FFC /* ArrayDataSource.m */; };
+		A90D166E1C9459E9003C4FFC /* UIImage+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D166D1C9459E9003C4FFC /* UIImage+Sizing.m */; };
+		A90D16721C945D10003C4FFC /* TMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16711C945D10003C4FFC /* TMTableViewController.m */; };
+		A90D16751C945D30003C4FFC /* TMCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16741C945D30003C4FFC /* TMCollectionViewController.m */; };
+		A90D16781C945D49003C4FFC /* TMPlainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16771C945D49003C4FFC /* TMPlainViewController.m */; };
+		A90D167C1C9462E8003C4FFC /* TMRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D167B1C9462E8003C4FFC /* TMRoute.m */; };
+		A90D167F1C946378003C4FFC /* NSString+TMRouteType.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D167E1C946378003C4FFC /* NSString+TMRouteType.m */; };
 		A978BB1A1C8E9A8300F06064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB191C8E9A8300F06064 /* main.m */; };
 		A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB1C1C8E9A8300F06064 /* AppDelegate.m */; };
 		A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A978BB241C8E9A8300F06064 /* Assets.xcassets */; };
@@ -81,6 +87,20 @@
 		A90D16661C94553E003C4FFC /* BlockTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BlockTypes.h; path = Types/BlockTypes.h; sourceTree = "<group>"; };
 		A90D16671C9456B7003C4FFC /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrayDataSource.h; path = Protocols/DataSource/ArrayDataSource.h; sourceTree = "<group>"; };
 		A90D16681C9456B7003C4FFC /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrayDataSource.m; path = Protocols/DataSource/ArrayDataSource.m; sourceTree = "<group>"; };
+		A90D166C1C9459E9003C4FFC /* UIImage+Sizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Sizing.h"; path = "Categories/Image/UIImage+Sizing.h"; sourceTree = "<group>"; };
+		A90D166D1C9459E9003C4FFC /* UIImage+Sizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Sizing.m"; path = "Categories/Image/UIImage+Sizing.m"; sourceTree = "<group>"; };
+		A90D166F1C945B41003C4FFC /* TMSizes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TMSizes.h; path = Types/TMSizes.h; sourceTree = "<group>"; };
+		A90D16701C945D10003C4FFC /* TMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMTableViewController.h; path = UI/Controllers/TMTableViewController.h; sourceTree = "<group>"; };
+		A90D16711C945D10003C4FFC /* TMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMTableViewController.m; path = UI/Controllers/TMTableViewController.m; sourceTree = "<group>"; };
+		A90D16731C945D30003C4FFC /* TMCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMCollectionViewController.h; path = UI/Controllers/TMCollectionViewController.h; sourceTree = "<group>"; };
+		A90D16741C945D30003C4FFC /* TMCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMCollectionViewController.m; path = UI/Controllers/TMCollectionViewController.m; sourceTree = "<group>"; };
+		A90D16761C945D49003C4FFC /* TMPlainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMPlainViewController.h; path = UI/Controllers/TMPlainViewController.h; sourceTree = "<group>"; };
+		A90D16771C945D49003C4FFC /* TMPlainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMPlainViewController.m; path = UI/Controllers/TMPlainViewController.m; sourceTree = "<group>"; };
+		A90D16791C945E1B003C4FFC /* TMRouteType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TMRouteType.h; path = Types/TMRouteType.h; sourceTree = "<group>"; };
+		A90D167A1C9462E8003C4FFC /* TMRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMRoute.h; path = Model/TMRoute.h; sourceTree = "<group>"; };
+		A90D167B1C9462E8003C4FFC /* TMRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMRoute.m; path = Model/TMRoute.m; sourceTree = "<group>"; };
+		A90D167D1C946378003C4FFC /* NSString+TMRouteType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+TMRouteType.h"; path = "Types/NSString+TMRouteType.h"; sourceTree = "<group>"; };
+		A90D167E1C946378003C4FFC /* NSString+TMRouteType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+TMRouteType.m"; path = "Types/NSString+TMRouteType.m"; sourceTree = "<group>"; };
 		A978BB151C8E9A8300F06064 /* touchme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978BB191C8E9A8300F06064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A978BB1B1C8E9A8300F06064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -198,6 +218,10 @@
 				A90D16601C944CF4003C4FFC /* NSString+HomeItemType.h */,
 				A90D16611C944CF4003C4FFC /* NSString+HomeItemType.m */,
 				A90D16661C94553E003C4FFC /* BlockTypes.h */,
+				A90D166F1C945B41003C4FFC /* TMSizes.h */,
+				A90D16791C945E1B003C4FFC /* TMRouteType.h */,
+				A90D167D1C946378003C4FFC /* NSString+TMRouteType.h */,
+				A90D167E1C946378003C4FFC /* NSString+TMRouteType.m */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -298,6 +322,12 @@
 				A9AE4D071C8EA172009F86B2 /* BaseViewController.m */,
 				A9AE4D011C8EA128009F86B2 /* HomeViewController.h */,
 				A9AE4D021C8EA128009F86B2 /* HomeViewController.m */,
+				A90D16701C945D10003C4FFC /* TMTableViewController.h */,
+				A90D16711C945D10003C4FFC /* TMTableViewController.m */,
+				A90D16731C945D30003C4FFC /* TMCollectionViewController.h */,
+				A90D16741C945D30003C4FFC /* TMCollectionViewController.m */,
+				A90D16761C945D49003C4FFC /* TMPlainViewController.h */,
+				A90D16771C945D49003C4FFC /* TMPlainViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -409,6 +439,8 @@
 				A9AE4D3E1C8EBAF9009F86B2 /* MMJColorItem.m */,
 				A90D165B1C944C4C003C4FFC /* HomeItem.h */,
 				A90D165C1C944C4C003C4FFC /* HomeItem.m */,
+				A90D167A1C9462E8003C4FFC /* TMRoute.h */,
+				A90D167B1C9462E8003C4FFC /* TMRoute.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -418,6 +450,8 @@
 			children = (
 				A9AE4D401C8EBF36009F86B2 /* UIImage+Colored.h */,
 				A9AE4D411C8EBF36009F86B2 /* UIImage+Colored.m */,
+				A90D166C1C9459E9003C4FFC /* UIImage+Sizing.h */,
+				A90D166D1C9459E9003C4FFC /* UIImage+Sizing.m */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -649,10 +683,12 @@
 				A9AE4D961C8EC1E9009F86B2 /* NSArray+MASAdditions.m in Sources */,
 				A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */,
 				A9AE4D301C8EB883009F86B2 /* NSArray+StringHelper.m in Sources */,
+				A90D16751C945D30003C4FFC /* TMCollectionViewController.m in Sources */,
 				A9AE4D971C8EC1E9009F86B2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				A9AE4D3B1C8EB954009F86B2 /* MMJColorPalettes.m in Sources */,
 				A9AE4D781C8EC1D5009F86B2 /* README.md in Sources */,
 				A9AE4D081C8EA172009F86B2 /* BaseViewController.m in Sources */,
+				A90D166E1C9459E9003C4FFC /* UIImage+Sizing.m in Sources */,
 				A9AE4D921C8EC1E9009F86B2 /* MASConstraintMaker.m in Sources */,
 				A9AE4D981C8EC1E9009F86B2 /* View+MASAdditions.m in Sources */,
 				A90D16691C9456B7003C4FFC /* ArrayDataSource.m in Sources */,
@@ -667,10 +703,12 @@
 				A9AE4D0B1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m in Sources */,
 				A9AE4D711C8EC185009F86B2 /* MBProgressHUD.m in Sources */,
 				A978BB1A1C8E9A8300F06064 /* main.m in Sources */,
+				A90D16721C945D10003C4FFC /* TMTableViewController.m in Sources */,
 				A9AE4D721C8EC185009F86B2 /* README.mdown in Sources */,
 				A9AE4D421C8EBF36009F86B2 /* UIImage+Colored.m in Sources */,
 				A9AE4D341C8EB89B009F86B2 /* NSString+MethodList.m in Sources */,
 				A9AE4D9C1C8EC285009F86B2 /* BaseSubview.m in Sources */,
+				A90D167C1C9462E8003C4FFC /* TMRoute.m in Sources */,
 				A9AE4D3F1C8EBAF9009F86B2 /* MMJColorItem.m in Sources */,
 				A9AE4D211C8EB624009F86B2 /* UIColor+Pantone.m in Sources */,
 				A9AE4D931C8EC1E9009F86B2 /* MASLayoutConstraint.m in Sources */,
@@ -679,8 +717,10 @@
 				A9AE4D161C8EB276009F86B2 /* UIColor+Copic.m in Sources */,
 				A90D16621C944CF4003C4FFC /* NSString+HomeItemType.m in Sources */,
 				A9AE4D2A1C8EB73B009F86B2 /* UIColor+Crayola.m in Sources */,
+				A90D16781C945D49003C4FFC /* TMPlainViewController.m in Sources */,
 				A9AE4D1B1C8EB4E8009F86B2 /* UIColor+Html.m in Sources */,
 				A9AE4D031C8EA128009F86B2 /* HomeViewController.m in Sources */,
+				A90D167F1C946378003C4FFC /* NSString+TMRouteType.m in Sources */,
 				A9AE4D271C8EB732009F86B2 /* UIColor+Crayon.m in Sources */,
 				A9AE4D941C8EC1E9009F86B2 /* MASViewAttribute.m in Sources */,
 			);

@@ -86,6 +86,24 @@ This way, all view controllers that inherit from `BaseViewController` will be re
 
 This is one example where inheritance is a good usecase in Objective C.
 
+##Basic Application Structure and idioms
+* Each UI object comes from basic class, like `BaseViewController`, `BaseView` and so on.
+* For cells I use a base `CellSubview` class that goes in cell's `ContentView`, for tables and collections respectively.
+* Each container view (table or collection) uses `DataSource` and `Delegate` objects implemented outside of that container's view implementation.
+* For routing, there is `Router` class that handles that. It takes into account whether a `ViewController` is modal, or should it be put into `Navigation stack`.
+* Each enum ends with a count enum
+
+
+```objective-c
+typedef NS_ENUM(NSInteger, HomeItemType) {
+    HomeItemType_TableView = 0,
+    HomeItemType_CollectionView,
+    HomeItemType_View,
+    HomeItemType_Count
+};
+```
+* All enums have a corresponding NSString category for their respective object's string properties.
+
 ##Adding Quick Actions
 
 Quick Actions enable user  to quickly jump into a specific section of the app just by pressing down on the app icon. 

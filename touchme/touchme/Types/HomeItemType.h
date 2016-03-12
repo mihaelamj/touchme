@@ -16,5 +16,4 @@ typedef NS_ENUM(NSInteger, HomeItemType) {
     HomeItemType_Count
 };
 
-
 #endif /* HomeItemType_h */

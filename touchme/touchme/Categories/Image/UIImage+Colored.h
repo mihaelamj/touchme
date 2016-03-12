@@ -12,4 +12,6 @@
 
 + (UIImage *)imageWithColor:(UIColor *)color width:(CGFloat)width height:(CGFloat)height;
 
+- (UIImage *)colorize:(UIColor *)color;
+
 @end
