@@ -64,6 +64,8 @@ static NSString * const kHomeItemCellIdentifier = @"HomeItemCell";
     self.view.accessibilityLabel = NSLocalizedString(@"HomeViewController View Accessibility Label", @"");;
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setupTableView];
 }
 
 #pragma mark -

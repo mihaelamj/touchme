@@ -60,7 +60,7 @@
         TMRouteType routeType = [self routeTypeForHomeItemType:item.type];
         
         item.actionBlock = ^{
-            [TMRoute navigateRouteType:routeType fromViewController:weakController params:nil modal:YES];
+            [TMRoute navigateRouteType:routeType fromViewController:weakController params:nil modal:NO];
         };
         
     }

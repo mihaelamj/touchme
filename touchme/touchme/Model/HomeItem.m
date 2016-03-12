@@ -18,6 +18,9 @@
 #import "UIImage+Colored.h"
 #import "UIImage+Sizing.h"
 
+//style
+#import "UIColor+TMStyle.h"
+
 @interface HomeItem ()
 
 @property (nonatomic, strong) NSString *imageName;
@@ -64,7 +67,7 @@
 {
     if (!_image) {
         _image = [UIImage imageNamed:self.imageName];
-        _image = [_image colorize:[UIColor blueColor]];
+        _image = [_image colorize:[UIColor colorWithStyle:TMColorStyle_Blue]];
         _image = [_image scaledToSize:CGSizeMake(kHomeItemImageSize, kHomeItemImageSize)];
     }
     return _image;

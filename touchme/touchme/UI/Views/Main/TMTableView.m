@@ -1,17 +1,14 @@
 //
-//  HomeView.m
+//  TMTableView.m
 //  touchme
 //
 //  Created by Mihaela Mihaljevic Jakic on 12/03/16.
 //  Copyright © 2016 Mihaela Mihaljevic Jakic. All rights reserved.
 //
 
-#import "HomeView.h"
+#import "TMTableView.h"
 
-@implementation HomeView
-
-#pragma mark -
-#pragma mark Init
+@implementation TMTableView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

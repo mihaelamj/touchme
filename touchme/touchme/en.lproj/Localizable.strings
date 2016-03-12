@@ -8,9 +8,15 @@
 
 //VC Titles
 "HomeViewController Title" = "Home Screen";
+"TMTableViewController Title" = "TableView Screen";
+"TMCollectionViewController Title"= "CollectionView Screen";
+"TMPlainViewController Title"= "PlainView Screen";
 
 //Accessibility Labels
-"HomeViewController View Accessibility Label" = "Home Screen View";
+"HomeViewController View Accessibility Label" = "HomeViewController Screen View";
+"TMTableViewController View Accessibility Label" = "TMTableViewController Screen View";
+"TMCollectionViewController View Accessibility Label" = "TMCollectionViewController Screen View";
+"TMPlainViewController View Accessibility Label" = "TMPlainViewController Screen View";
 
 //HomeItemType Titles
 "HomeItemType_TableView Title" = "Table View";

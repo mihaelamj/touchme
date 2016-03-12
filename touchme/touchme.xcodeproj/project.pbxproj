@@ -20,6 +20,13 @@
 		A90D16821C946ACA003C4FFC /* HomeViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16811C946ACA003C4FFC /* HomeViewControllerDelegate.m */; };
 		A90D16861C946D8B003C4FFC /* BaseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16851C946D8B003C4FFC /* BaseStore.m */; };
 		A90D168A1C946DD6003C4FFC /* HomeItemsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16891C946DD6003C4FFC /* HomeItemsStore.m */; };
+		A90D168D1C9476CA003C4FFC /* TMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D168C1C9476CA003C4FFC /* TMTableView.m */; };
+		A90D16901C9476F0003C4FFC /* TMCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D168F1C9476F0003C4FFC /* TMCollectionView.m */; };
+		A90D16931C947708003C4FFC /* TMPlainView.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16921C947708003C4FFC /* TMPlainView.m */; };
+		A90D16961C947767003C4FFC /* ColorItemCellSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16951C947767003C4FFC /* ColorItemCellSubview.m */; };
+		A90D16991C947833003C4FFC /* UIColor+TMStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16981C947833003C4FFC /* UIColor+TMStyle.m */; };
+		A90D169D1C947AAA003C4FFC /* UIFont+TMStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D169C1C947AAA003C4FFC /* UIFont+TMStyle.m */; };
+		A90D16A01C947C78003C4FFC /* UILabel+TMStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D169F1C947C78003C4FFC /* UILabel+TMStyle.m */; };
 		A978BB1A1C8E9A8300F06064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB191C8E9A8300F06064 /* main.m */; };
 		A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB1C1C8E9A8300F06064 /* AppDelegate.m */; };
 		A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A978BB241C8E9A8300F06064 /* Assets.xcassets */; };
@@ -110,6 +117,20 @@
 		A90D16851C946D8B003C4FFC /* BaseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseStore.m; path = Stores/BaseStore.m; sourceTree = "<group>"; };
 		A90D16881C946DD6003C4FFC /* HomeItemsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeItemsStore.h; path = Stores/HomeItemsStore.h; sourceTree = "<group>"; };
 		A90D16891C946DD6003C4FFC /* HomeItemsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeItemsStore.m; path = Stores/HomeItemsStore.m; sourceTree = "<group>"; };
+		A90D168B1C9476CA003C4FFC /* TMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMTableView.h; path = UI/Views/Main/TMTableView.h; sourceTree = "<group>"; };
+		A90D168C1C9476CA003C4FFC /* TMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMTableView.m; path = UI/Views/Main/TMTableView.m; sourceTree = "<group>"; };
+		A90D168E1C9476F0003C4FFC /* TMCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMCollectionView.h; path = UI/Views/Main/TMCollectionView.h; sourceTree = "<group>"; };
+		A90D168F1C9476F0003C4FFC /* TMCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMCollectionView.m; path = UI/Views/Main/TMCollectionView.m; sourceTree = "<group>"; };
+		A90D16911C947708003C4FFC /* TMPlainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMPlainView.h; path = UI/Views/Main/TMPlainView.h; sourceTree = "<group>"; };
+		A90D16921C947708003C4FFC /* TMPlainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMPlainView.m; path = UI/Views/Main/TMPlainView.m; sourceTree = "<group>"; };
+		A90D16941C947767003C4FFC /* ColorItemCellSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorItemCellSubview.h; path = UI/Views/Cell/ColorItemCellSubview.h; sourceTree = "<group>"; };
+		A90D16951C947767003C4FFC /* ColorItemCellSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorItemCellSubview.m; path = UI/Views/Cell/ColorItemCellSubview.m; sourceTree = "<group>"; };
+		A90D16971C947833003C4FFC /* UIColor+TMStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+TMStyle.h"; path = "Style/UIColor+TMStyle.h"; sourceTree = "<group>"; };
+		A90D16981C947833003C4FFC /* UIColor+TMStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TMStyle.m"; path = "Style/UIColor+TMStyle.m"; sourceTree = "<group>"; };
+		A90D169B1C947AAA003C4FFC /* UIFont+TMStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+TMStyle.h"; path = "Style/UIFont+TMStyle.h"; sourceTree = "<group>"; };
+		A90D169C1C947AAA003C4FFC /* UIFont+TMStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+TMStyle.m"; path = "Style/UIFont+TMStyle.m"; sourceTree = "<group>"; };
+		A90D169E1C947C78003C4FFC /* UILabel+TMStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+TMStyle.h"; path = "Style/UILabel+TMStyle.h"; sourceTree = "<group>"; };
+		A90D169F1C947C78003C4FFC /* UILabel+TMStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+TMStyle.m"; path = "Style/UILabel+TMStyle.m"; sourceTree = "<group>"; };
 		A978BB151C8E9A8300F06064 /* touchme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978BB191C8E9A8300F06064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A978BB1B1C8E9A8300F06064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -273,6 +294,19 @@
 			name = Stores;
 			sourceTree = "<group>";
 		};
+		A90D169A1C947838003C4FFC /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				A90D16971C947833003C4FFC /* UIColor+TMStyle.h */,
+				A90D16981C947833003C4FFC /* UIColor+TMStyle.m */,
+				A90D169B1C947AAA003C4FFC /* UIFont+TMStyle.h */,
+				A90D169C1C947AAA003C4FFC /* UIFont+TMStyle.m */,
+				A90D169E1C947C78003C4FFC /* UILabel+TMStyle.h */,
+				A90D169F1C947C78003C4FFC /* UILabel+TMStyle.m */,
+			);
+			name = Style;
+			sourceTree = "<group>";
+		};
 		A978BB0C1C8E9A8300F06064 = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +336,7 @@
 				A90D16871C946D91003C4FFC /* Stores */,
 				A90D166A1C9456BC003C4FFC /* Protocols */,
 				A9AE4D0C1C8EA412009F86B2 /* Categories */,
+				A90D169A1C947838003C4FFC /* Style */,
 				A9AE4D041C8EA13C009F86B2 /* UI */,
 				A9AE4D0D1C8EA428009F86B2 /* Resources */,
 				A9AE4D731C8EC18F009F86B2 /* Vendor */,
@@ -563,6 +598,8 @@
 			children = (
 				A9AE4D9F1C8EC30E009F86B2 /* CellSubview.h */,
 				A9AE4DA01C8EC30E009F86B2 /* CellSubview.m */,
+				A90D16941C947767003C4FFC /* ColorItemCellSubview.h */,
+				A90D16951C947767003C4FFC /* ColorItemCellSubview.m */,
 			);
 			name = CellSubviews;
 			sourceTree = "<group>";
@@ -574,6 +611,12 @@
 				A9AE4DA41C8EC416009F86B2 /* BaseView.m */,
 				A90D16631C94539F003C4FFC /* HomeView.h */,
 				A90D16641C94539F003C4FFC /* HomeView.m */,
+				A90D168B1C9476CA003C4FFC /* TMTableView.h */,
+				A90D168C1C9476CA003C4FFC /* TMTableView.m */,
+				A90D168E1C9476F0003C4FFC /* TMCollectionView.h */,
+				A90D168F1C9476F0003C4FFC /* TMCollectionView.m */,
+				A90D16911C947708003C4FFC /* TMPlainView.h */,
+				A90D16921C947708003C4FFC /* TMPlainView.m */,
 			);
 			name = MainViews;
 			sourceTree = "<group>";
@@ -716,6 +759,7 @@
 				A9AE4D301C8EB883009F86B2 /* NSArray+StringHelper.m in Sources */,
 				A90D16751C945D30003C4FFC /* TMCollectionViewController.m in Sources */,
 				A9AE4D971C8EC1E9009F86B2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A90D16901C9476F0003C4FFC /* TMCollectionView.m in Sources */,
 				A9AE4D3B1C8EB954009F86B2 /* MMJColorPalettes.m in Sources */,
 				A9AE4D781C8EC1D5009F86B2 /* README.md in Sources */,
 				A9AE4D081C8EA172009F86B2 /* BaseViewController.m in Sources */,
@@ -726,21 +770,26 @@
 				A90D16651C94539F003C4FFC /* HomeView.m in Sources */,
 				A90D165D1C944C4C003C4FFC /* HomeItem.m in Sources */,
 				A9AE4D381C8EB8BC009F86B2 /* UIColor+StandardColors.m in Sources */,
+				A90D168D1C9476CA003C4FFC /* TMTableView.m in Sources */,
 				A9AE4D911C8EC1E9009F86B2 /* MASConstraint.m in Sources */,
 				A9AE4DA51C8EC416009F86B2 /* BaseView.m in Sources */,
 				A90D168A1C946DD6003C4FFC /* HomeItemsStore.m in Sources */,
 				A9AE4D121C8EA5BC009F86B2 /* UIApplication+ThreeDSupport.m in Sources */,
+				A90D16991C947833003C4FFC /* UIColor+TMStyle.m in Sources */,
 				A9AE4D951C8EC1E9009F86B2 /* MASViewConstraint.m in Sources */,
 				A9AE4DA11C8EC30E009F86B2 /* CellSubview.m in Sources */,
 				A9AE4D0B1C8EA40D009F86B2 /* UIViewController+CheckFor3DTouch.m in Sources */,
 				A9AE4D711C8EC185009F86B2 /* MBProgressHUD.m in Sources */,
 				A978BB1A1C8E9A8300F06064 /* main.m in Sources */,
+				A90D16961C947767003C4FFC /* ColorItemCellSubview.m in Sources */,
 				A90D16721C945D10003C4FFC /* TMTableViewController.m in Sources */,
+				A90D169D1C947AAA003C4FFC /* UIFont+TMStyle.m in Sources */,
 				A9AE4D721C8EC185009F86B2 /* README.mdown in Sources */,
 				A9AE4D421C8EBF36009F86B2 /* UIImage+Colored.m in Sources */,
 				A9AE4D341C8EB89B009F86B2 /* NSString+MethodList.m in Sources */,
 				A9AE4D9C1C8EC285009F86B2 /* BaseSubview.m in Sources */,
 				A90D167C1C9462E8003C4FFC /* TMRoute.m in Sources */,
+				A90D16A01C947C78003C4FFC /* UILabel+TMStyle.m in Sources */,
 				A9AE4D3F1C8EBAF9009F86B2 /* MMJColorItem.m in Sources */,
 				A90D16821C946ACA003C4FFC /* HomeViewControllerDelegate.m in Sources */,
 				A9AE4D211C8EB624009F86B2 /* UIColor+Pantone.m in Sources */,
@@ -753,6 +802,7 @@
 				A90D16781C945D49003C4FFC /* TMPlainViewController.m in Sources */,
 				A9AE4D1B1C8EB4E8009F86B2 /* UIColor+Html.m in Sources */,
 				A9AE4D031C8EA128009F86B2 /* HomeViewController.m in Sources */,
+				A90D16931C947708003C4FFC /* TMPlainView.m in Sources */,
 				A90D167F1C946378003C4FFC /* NSString+TMRouteType.m in Sources */,
 				A90D16861C946D8B003C4FFC /* BaseStore.m in Sources */,
 				A9AE4D271C8EB732009F86B2 /* UIColor+Crayon.m in Sources */,

@@ -10,7 +10,7 @@
 #define TMSizes_h
 
 //ViewWithRightImage
-static const CGFloat kHomeItemImageSize = 40.0f;
+static const CGFloat kHomeItemImageSize = 30.0f;
 static const CGFloat kHomeItemCellHeight = 50.0f;
 
 #endif /* TMSizes_h */
