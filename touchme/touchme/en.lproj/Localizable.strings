@@ -11,3 +11,8 @@
 
 //Accessibility Labels
 "HomeViewController View Accessibility Label" = "Home Screen View";
+
+//HomeItemType Titles
+"HomeItemType_TableView Title" = "Table View";
+"HomeItemType_CollectionView Title" = "Collection View";
+"HomeItemType_View Title" = "Plain View";

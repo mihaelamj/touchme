@@ -8,7 +8,18 @@
 
 #import "HomeViewController.h"
 
+//main view
+#import "HomeView.h"
+
+//model
+#import "HomeItem.h"
+
 @interface HomeViewController ()
+
+@property (nonatomic, strong) HomeView *mainView;
+
+//items
+@property (nonatomic, strong) NSArray *items;
 
 @end
 
@@ -16,6 +27,12 @@
 
 #pragma mark -
 #pragma mark View Lifecycle
+
+- (void)loadView
+{
+    //set view
+    self.view = self.mainView;
+}
 
 - (void)viewDidLoad
 {
@@ -27,6 +44,27 @@
     self.view.accessibilityLabel = NSLocalizedString(@"HomeViewController View Accessibility Label", @"");;
     
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+#pragma mark -
+#pragma mark Private Properties
+
+- (NSArray *)items
+{
+    if (!_items) {
+        _items = [HomeItem itemArray];
+    }
+    return _items;
+}
+
+#pragma mark View
+
+- (HomeView *)mainView
+{
+    if (!_mainView) {
+        _mainView = [[HomeView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+    }
+    return _mainView;
 }
 
 @end

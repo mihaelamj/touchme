@@ -12,6 +12,9 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+//Simple block definition
+//typedef dispatch_block_t SimpleBlock;
+
 #define MMJLog(s, ...) NSLog( @"<%@:%d> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 
 #define RANDOM_BOOL (arc4random_uniform(2)==0 ? YES : NO)

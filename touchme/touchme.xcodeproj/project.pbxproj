@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90D165D1C944C4C003C4FFC /* HomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D165C1C944C4C003C4FFC /* HomeItem.m */; };
+		A90D16621C944CF4003C4FFC /* NSString+HomeItemType.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16611C944CF4003C4FFC /* NSString+HomeItemType.m */; };
+		A90D16651C94539F003C4FFC /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16641C94539F003C4FFC /* HomeView.m */; };
+		A90D16691C9456B7003C4FFC /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D16681C9456B7003C4FFC /* ArrayDataSource.m */; };
 		A978BB1A1C8E9A8300F06064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB191C8E9A8300F06064 /* main.m */; };
 		A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB1C1C8E9A8300F06064 /* AppDelegate.m */; };
 		A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A978BB241C8E9A8300F06064 /* Assets.xcassets */; };
@@ -67,6 +71,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90D165B1C944C4C003C4FFC /* HomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeItem.h; path = Model/HomeItem.h; sourceTree = "<group>"; };
+		A90D165C1C944C4C003C4FFC /* HomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeItem.m; path = Model/HomeItem.m; sourceTree = "<group>"; };
+		A90D165E1C944C8E003C4FFC /* HomeItemType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HomeItemType.h; path = Types/HomeItemType.h; sourceTree = "<group>"; };
+		A90D16601C944CF4003C4FFC /* NSString+HomeItemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HomeItemType.h"; path = "Types/NSString+HomeItemType.h"; sourceTree = "<group>"; };
+		A90D16611C944CF4003C4FFC /* NSString+HomeItemType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HomeItemType.m"; path = "Types/NSString+HomeItemType.m"; sourceTree = "<group>"; };
+		A90D16631C94539F003C4FFC /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeView.h; path = UI/Views/Main/HomeView.h; sourceTree = "<group>"; };
+		A90D16641C94539F003C4FFC /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeView.m; path = UI/Views/Main/HomeView.m; sourceTree = "<group>"; };
+		A90D16661C94553E003C4FFC /* BlockTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BlockTypes.h; path = Types/BlockTypes.h; sourceTree = "<group>"; };
+		A90D16671C9456B7003C4FFC /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrayDataSource.h; path = Protocols/DataSource/ArrayDataSource.h; sourceTree = "<group>"; };
+		A90D16681C9456B7003C4FFC /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrayDataSource.m; path = Protocols/DataSource/ArrayDataSource.m; sourceTree = "<group>"; };
 		A978BB151C8E9A8300F06064 /* touchme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978BB191C8E9A8300F06064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A978BB1B1C8E9A8300F06064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -177,6 +191,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A90D165F1C944C93003C4FFC /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				A90D165E1C944C8E003C4FFC /* HomeItemType.h */,
+				A90D16601C944CF4003C4FFC /* NSString+HomeItemType.h */,
+				A90D16611C944CF4003C4FFC /* NSString+HomeItemType.m */,
+				A90D16661C94553E003C4FFC /* BlockTypes.h */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		A90D166A1C9456BC003C4FFC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A90D166B1C9456D0003C4FFC /* DataSource */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		A90D166B1C9456D0003C4FFC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A90D16671C9456B7003C4FFC /* ArrayDataSource.h */,
+				A90D16681C9456B7003C4FFC /* ArrayDataSource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
 		A978BB0C1C8E9A8300F06064 = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +243,9 @@
 			isa = PBXGroup;
 			children = (
 				A9AE4D0E1C8EA444009F86B2 /* Application */,
+				A90D165F1C944C93003C4FFC /* Types */,
 				A9AE4D3C1C8EB95A009F86B2 /* Model */,
+				A90D166A1C9456BC003C4FFC /* Protocols */,
 				A9AE4D0C1C8EA412009F86B2 /* Categories */,
 				A9AE4D041C8EA13C009F86B2 /* UI */,
 				A9AE4D0D1C8EA428009F86B2 /* Resources */,
@@ -363,6 +407,8 @@
 				A9AE4D3A1C8EB954009F86B2 /* MMJColorPalettes.m */,
 				A9AE4D3D1C8EBAF9009F86B2 /* MMJColorItem.h */,
 				A9AE4D3E1C8EBAF9009F86B2 /* MMJColorItem.m */,
+				A90D165B1C944C4C003C4FFC /* HomeItem.h */,
+				A90D165C1C944C4C003C4FFC /* HomeItem.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -461,6 +507,8 @@
 			children = (
 				A9AE4DA31C8EC416009F86B2 /* BaseView.h */,
 				A9AE4DA41C8EC416009F86B2 /* BaseView.m */,
+				A90D16631C94539F003C4FFC /* HomeView.h */,
+				A90D16641C94539F003C4FFC /* HomeView.m */,
 			);
 			name = MainViews;
 			sourceTree = "<group>";
@@ -607,6 +655,9 @@
 				A9AE4D081C8EA172009F86B2 /* BaseViewController.m in Sources */,
 				A9AE4D921C8EC1E9009F86B2 /* MASConstraintMaker.m in Sources */,
 				A9AE4D981C8EC1E9009F86B2 /* View+MASAdditions.m in Sources */,
+				A90D16691C9456B7003C4FFC /* ArrayDataSource.m in Sources */,
+				A90D16651C94539F003C4FFC /* HomeView.m in Sources */,
+				A90D165D1C944C4C003C4FFC /* HomeItem.m in Sources */,
 				A9AE4D381C8EB8BC009F86B2 /* UIColor+StandardColors.m in Sources */,
 				A9AE4D911C8EC1E9009F86B2 /* MASConstraint.m in Sources */,
 				A9AE4DA51C8EC416009F86B2 /* BaseView.m in Sources */,
@@ -626,6 +677,7 @@
 				A9AE4D2D1C8EB7B6009F86B2 /* UIColor+HexString.m in Sources */,
 				A9AE4D901C8EC1E9009F86B2 /* MASCompositeConstraint.m in Sources */,
 				A9AE4D161C8EB276009F86B2 /* UIColor+Copic.m in Sources */,
+				A90D16621C944CF4003C4FFC /* NSString+HomeItemType.m in Sources */,
 				A9AE4D2A1C8EB73B009F86B2 /* UIColor+Crayola.m in Sources */,
 				A9AE4D1B1C8EB4E8009F86B2 /* UIColor+Html.m in Sources */,
 				A9AE4D031C8EA128009F86B2 /* HomeViewController.m in Sources */,

@@ -18,7 +18,7 @@
 
 - (void)checkAndApply3DTouch:(id)previewingContext
 {
-    // register for 3D Touch (if available)
+    //register for 3D Touch (if available)
     if ([UIApplication isThreeDTouchDevice]) {
         previewingContext = [self registerForPreviewingWithDelegate:(id)self sourceView:self.view];
         MMJLog(@"3D Touch is available! :)");
