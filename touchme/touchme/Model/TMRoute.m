@@ -36,7 +36,12 @@
 
 - (void)navigateToRouteFromViewController:(BaseViewController *)fromViewController params:(NSDictionary *)params modal:(BOOL)modal
 {
-    BaseViewController *toViewController = [TMRoute viewControllerForRoute:self params:params modal:modal];
+    [TMRoute navigateRouteType:self.type fromViewController:fromViewController params:params modal:modal];
+}
+
++ (void)navigateRouteType:(TMRouteType)routeType fromViewController:(BaseViewController *)fromViewController params:(NSDictionary *)params modal:(BOOL)modal
+{
+    BaseViewController *toViewController = [TMRoute viewControllerForRouteType:routeType params:params modal:modal];
     
     //if fromViewController is embedded VC, present from it's parent
     UIViewController *presenter = (fromViewController.isEmbeddedController && fromViewController.parentController) ? fromViewController.parentController : fromViewController;
@@ -52,17 +57,15 @@
             [presenter presentViewController:toViewController animated:YES completion:^{
             }];
         }
-        
     }
-    
 }
 
 #pragma mark -
 #pragma mark Private Methods
 
-+ (BaseViewController *)viewControllerForRoute:(TMRoute *)route params:(NSDictionary *)params modal:(BOOL)modal
++ (BaseViewController *)viewControllerForRouteType:(TMRouteType)routeType params:(NSDictionary *)params modal:(BOOL)modal
 {
-    switch (route.type) {
+    switch (routeType) {
             
         case TMRouteType_HomeItem_TableView:
             return [[TMTableViewController alloc] initWithParams:params modal:modal];

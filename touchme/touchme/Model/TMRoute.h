@@ -23,4 +23,6 @@
 
 - (void)navigateToRouteFromViewController:(BaseViewController *)fromViewController params:(NSDictionary *)params modal:(BOOL)modal;
 
++ (void)navigateRouteType:(TMRouteType)routeType fromViewController:(BaseViewController *)fromViewController params:(NSDictionary *)params modal:(BOOL)modal;
+
 @end

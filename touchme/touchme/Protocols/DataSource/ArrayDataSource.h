@@ -17,10 +17,10 @@
 @interface ArrayDataSource : NSObject<UITableViewDataSource, UICollectionViewDataSource>
 
 //init
-- (id)initWithArray:(NSArray *)array cellIdentifier:(NSString *)cellIdentifier configureCellBlock:(CellConfigureBlock)configureCellBlock;
+- (instancetype)initWithArray:(NSArray *)array cellIdentifier:(NSString *)cellIdentifier configureCellBlock:(CellConfigureBlock)configureCellBlock;
 
 //public properties
-@property (nonatomic, strong) NSArray *array;
+@property (nonatomic, weak) NSArray *array;
 @property (nonatomic, copy) NSString *cellIdentifier;
 @property (nonatomic, copy) CellConfigureBlock configureCellBlock;
 

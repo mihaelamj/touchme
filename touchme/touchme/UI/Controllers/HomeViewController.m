@@ -13,9 +13,17 @@
 
 //model
 #import "HomeItem.h"
+//store
+#import "HomeItemsStore.h"
 
 //data source
 #import "ArrayDataSource.h"
+
+//delegate
+#import "HomeViewControllerDelegate.h"
+
+//sizes
+#import "TMSizes.h"
 
 //cell identifier
 static NSString * const kHomeItemCellIdentifier = @"HomeItemCell";
@@ -29,6 +37,9 @@ static NSString * const kHomeItemCellIdentifier = @"HomeItemCell";
 
 //data source
 @property (nonatomic, strong) ArrayDataSource *dataSource;
+@property (nonatomic, strong) HomeViewControllerDelegate *delegate;
+
+- (void)setupTableView;
 
 @end
 
@@ -56,12 +67,29 @@ static NSString * const kHomeItemCellIdentifier = @"HomeItemCell";
 }
 
 #pragma mark -
+#pragma mark Setup
+
+- (void)setupTableView
+{
+    //register cell class
+    [self.mainView.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kHomeItemCellIdentifier];
+    
+    //table view row height
+    self.mainView.tableView.rowHeight = kHomeItemCellHeight;
+    
+    //set table view data source and delegate
+    self.mainView.tableView.dataSource = self.dataSource;
+    self.mainView.tableView.delegate = self.delegate;
+}
+
+#pragma mark -
 #pragma mark Private Properties
 
 - (NSArray *)items
 {
     if (!_items) {
-        _items = [HomeItem itemArray];
+        NSError *error = nil;
+        _items = [HomeItemsStore itemsWithError:&error controller:self];
     }
     return _items;
 }
@@ -81,6 +109,14 @@ static NSString * const kHomeItemCellIdentifier = @"HomeItemCell";
     }
     
     return _dataSource;
+}
+
+- (HomeViewControllerDelegate *)delegate
+{
+    if (!_delegate) {
+        _delegate = [[HomeViewControllerDelegate alloc] initWithArray:self.items];
+    }
+    return _delegate;
 }
 
 #pragma mark View
