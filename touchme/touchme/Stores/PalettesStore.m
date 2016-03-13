@@ -97,10 +97,10 @@
     }
     
     return @{TMKEY_STORE_CLASS: storeClas,
-             TMKEY_VIEW_CONTROLLER_TITLE: cellClass,
+             TMKEY_CELL_CLASS: cellClass,
              TMKEY_MODEL_CLASS: modelClass,
-             TMKEY_VIEW_ACCSESSIBILITY_LABEL: vcTitle,
-             TMKEY_CELL_CLASS: viewAL,
+             TMKEY_VIEW_CONTROLLER_TITLE: vcTitle,
+             TMKEY_VIEW_ACCSESSIBILITY_LABEL: viewAL,
              TMKEY_ROUTE_TYPE : @(routeType)
              };
 }

@@ -10,14 +10,14 @@
 
 @implementation BaseItem
 
-@synthesize actionBlock = _actionBlock;
+//@synthesize actionBlock = _actionBlock;
 
-#pragma mark -
-#pragma mark Public Properties
-
-- (SimpleBlock)actionBlock
-{
-    return ^{};
-}
+//#pragma mark -
+//#pragma mark Public Properties
+//
+//- (SimpleBlock)actionBlock
+//{
+//    return ^{};
+//}
 
 @end

@@ -150,14 +150,4 @@
     
 }
 
-- (UICollectionView *)collectionView
-{
-    return nil;
-}
-
-- (UITableView *)tableView
-{
-    return nil;
-}
-
 @end

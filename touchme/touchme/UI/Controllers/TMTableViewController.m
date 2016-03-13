@@ -44,10 +44,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor whiteColor];
 }
-
 
 #pragma mark -
 #pragma mark Private Properties

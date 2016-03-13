@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-//proticol
-#import "ActionableItem.h"
+//block types
+#import "BlockTypes.h"
 
-@interface BaseItem : NSObject<ActionableItem>
+//protocol
+//#import "ActionableItem.h"
+
+@interface BaseItem : NSObject//<ActionableItem>
+
+@property (nonatomic, copy) SimpleBlock actionBlock;
 
 @end

@@ -79,6 +79,7 @@
             modelClass = [MMJColorPalette class];
             vcTitle = NSLocalizedString(@"Color Palettes Title", nil);
             viewAL = NSLocalizedString(@"ColorPalettes TableViewController View Accessibility Label", nil);
+            break;
         }
 
         case TMRouteType_HomeItem_CollectionView: {
@@ -87,6 +88,7 @@
             modelClass = [MMJColorPalette class];
             vcTitle = NSLocalizedString(@"Color Palettes Title", nil);
             viewAL = NSLocalizedString(@"ColorPalettes CollectionViewController View Accessibility Label", nil);
+            break;
         }
 
         case TMRouteType_HomeItem_View:
@@ -97,10 +99,10 @@
     }
 
     return @{TMKEY_STORE_CLASS: storeClas,
-             TMKEY_VIEW_CONTROLLER_TITLE: cellClass,
+             TMKEY_CELL_CLASS: cellClass,
              TMKEY_MODEL_CLASS: modelClass,
-             TMKEY_VIEW_ACCSESSIBILITY_LABEL: vcTitle,
-             TMKEY_CELL_CLASS: viewAL,
+             TMKEY_VIEW_CONTROLLER_TITLE: vcTitle,
+             TMKEY_VIEW_ACCSESSIBILITY_LABEL: viewAL,
              TMKEY_ROUTE_TYPE : @(routeType)
              };
 }
