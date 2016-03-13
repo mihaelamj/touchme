@@ -12,13 +12,13 @@
 static const CGFloat kHomeItemImageSize = 30.0f;
 static const CGFloat kHomeItemCellHeight = 50.0f;
 
-static const CGFloat kColorItemCellHeight = 40.0f;
-static const CGFloat kPaletteItemCellHeight = 40.0f;
+static const CGFloat kColorItemCellHeight = 50.0f;
+static const CGFloat kPaletteItemCellHeight = 45.0f;
 static const CGFloat kColorItemCellWidth = 120.0f;
 static const CGFloat kPaletteItemCellWidth = 260.0f;
 
-static const CGFloat kPaletteImageWidth = 100.0f;
-static const CGFloat kPaletteImageHeight = 30.0f;
+static const CGFloat kPaletteImageWidth = 200.0f;
+static const CGFloat kPaletteImageHeight = 40.0f;
 
 static const CGFloat kDefaultCellOffset = 5.0f/2;
 

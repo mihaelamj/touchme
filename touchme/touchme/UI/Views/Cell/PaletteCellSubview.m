@@ -41,21 +41,21 @@
         make.centerY.equalTo(self.mas_centerY);
         make.height.equalTo(@(kPaletteImageHeight));
         make.width.equalTo(@(kPaletteImageWidth));
-        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset);
+        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset*3);
     }];
     
     //name on top, left
     [self.paletteNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_top);
-        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset);
-        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset);
+        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*3);
+        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset*3);
     }];
     
     //number of colors, bottol left
     [self.numberOfColorsLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.mas_bottom);
-        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset);
-        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset);
+        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*3);
+        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset*3);
     }];
 }
 
@@ -92,6 +92,22 @@
 + (CGFloat)recomendedWidth
 {
     return kPaletteItemCellWidth;
+}
+
+#pragma mark -
+#pragma mark Framework Overrides
+
+#pragma mark Layout
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    //make it a circle (here, because we don't know the frame before)
+    self.paletteImageView.layer.cornerRadius = 4.0f;
+    self.paletteImageView.layer.masksToBounds = YES;
+    self.paletteImageView.layer.borderColor = [UIColor colorWithStyle:TMColorStyle_GrayDark].CGColor;
+    self.paletteImageView.layer.borderWidth = 1.0f;
 }
 
 #pragma mark -

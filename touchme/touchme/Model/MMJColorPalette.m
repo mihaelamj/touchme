@@ -60,16 +60,15 @@
 {
     if (!_image) {
         
-        NSArray *randomArray = [self.colors randomObjects:12];
+        //make image with random colors from palette
+        NSArray *randomArray = [self.colors randomObjects:10];
         NSMutableArray *colorsArray = [NSMutableArray array];
         for (MMJColorItem *colorItem in randomArray) {
-            
             UIColor *color = colorItem.color;
             if (color) {
                 [colorsArray addObject:color];
             }
         }
-        
         CGSize aSize = CGSizeMake(kPaletteImageWidth, kPaletteImageHeight);
         _image = [UIImage imageWithColors:colorsArray size:aSize];
     }

@@ -51,13 +51,13 @@
 {
     switch (style) {
         case TMLabelStyle_VeryBigTitle:
-            return [UIFont fontWithStyle:TMFontStyle_Count];
+            return [UIFont fontWithStyle:TMFontStyle_VeryBig];
         case TMLabelStyle_ColorName:
-            return [UIFont fontWithStyle:TMFontStyle_Count];
+            return [UIFont fontWithStyle:TMFontStyle_Medium];
         case TMLabelStyle_HexString:
-            return [UIFont fontWithStyle:TMFontStyle_Count];
+            return [UIFont fontWithStyle:TMFontStyle_Small];
         case TMLabelStyle_PaletteName:
-            return [UIFont fontWithStyle:TMFontStyle_Count];
+            return [UIFont fontWithStyle:TMFontStyle_Medium];
         default:
             return [UIFont fontWithStyle:TMFontStyle_Count];
     }
@@ -69,9 +69,9 @@
         case TMLabelStyle_VeryBigTitle:
             return [UIColor colorWithStyle:TMColorStyle_GrayDark];
         case TMLabelStyle_ColorName:
-            return [UIColor colorWithStyle:TMColorStyle_Red];
-        case TMLabelStyle_HexString:
             return [UIColor colorWithStyle:TMColorStyle_Blue];
+        case TMLabelStyle_HexString:
+            return [UIColor colorWithStyle:TMColorStyle_GrayDark];
         case TMLabelStyle_PaletteName:
             return [UIColor colorWithStyle:TMColorStyle_GrayDark];
         default:
