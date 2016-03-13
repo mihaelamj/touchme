@@ -48,7 +48,7 @@
         make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*OFFSET_MULTI);
         make.centerY.equalTo(self.mas_centerY);
         make.height.equalTo(self.mas_height).multipliedBy(0.72);
-        make.width.equalTo(self.colorImageView.mas_height).multipliedBy(2.5f);
+        make.width.equalTo(self.mas_width).multipliedBy(0.4);
     }];
     
     [self.colorNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -41,8 +41,12 @@
     //image on the right, center
     [self.paletteImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.mas_centerY);
-        make.height.equalTo(@(kPaletteImageHeight));
-        make.width.equalTo(@(kPaletteImageWidth));
+        
+        make.height.equalTo(self.mas_height).multipliedBy(0.72);
+        make.width.equalTo(self.mas_width).multipliedBy(0.5);
+        
+//        make.height.equalTo(@(kPaletteImageHeight));
+//        make.width.equalTo(@(kPaletteImageWidth));
         make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset*OFFSET_MULTI);
     }];
     
