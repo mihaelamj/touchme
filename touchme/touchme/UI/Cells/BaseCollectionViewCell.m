@@ -79,7 +79,8 @@
 {
     Class contentClass = [BaseCollectionViewCell cellSubviewClass];
     if (contentClass) {
-        return [contentClass recomendedCellSize];
+        return CGSizeMake([contentClass recomendedWidth],
+                          [contentClass recomendedHeight]);
     }
     return CGSizeZero;
 }

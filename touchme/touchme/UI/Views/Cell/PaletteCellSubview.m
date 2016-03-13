@@ -36,7 +36,62 @@
 
 - (void)setSubviewConstraints
 {
+    //image on the right, center
+    [self.paletteImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.mas_centerY);
+        make.height.equalTo(@(kPaletteImageHeight));
+        make.width.equalTo(@(kPaletteImageWidth));
+        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset);
+    }];
     
+    //name on top, left
+    [self.paletteNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_top);
+        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset);
+        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset);
+    }];
+    
+    //number of colors, bottol left
+    [self.numberOfColorsLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.mas_bottom);
+        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset);
+        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset);
+    }];
+}
+
+#pragma mark Data
+
+- (void)customize:(id)customObject
+{
+    if (![customObject isKindOfClass:[MMJColorPalette class]]) {
+        MMJLog(@"Wrong object class passed to customize cell: expecting %@, got %@", NSStringFromClass([MMJColorPalette class]), NSStringFromClass([customObject class]));
+        return;
+    }
+    
+    MMJColorPalette *colorPalette = (MMJColorPalette *)customObject;
+    
+    self.paletteImageView.image = colorPalette.image;
+    self.paletteNameLabel.text = colorPalette.name;
+    self.numberOfColorsLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)[colorPalette.colors count]];
+}
+
+- (void)cleanView
+{
+    self.paletteImageView.image = nil;
+    self.paletteNameLabel.text = @"";
+    self.numberOfColorsLabel.text = @"";
+}
+
+#pragma mark Static
+
++ (CGFloat)recomendedHeight
+{
+    return kPaletteItemCellHeight;
+}
+
++ (CGFloat)recomendedWidth
+{
+    return kPaletteItemCellWidth;
 }
 
 #pragma mark -

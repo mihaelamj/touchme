@@ -11,7 +11,14 @@
 //helper
 #import "MMJColorPalettes.h"
 
+//image helper
+#import "UIImage+Colored.h"
+#import "NSArray+MMJRandom.h"
+#import "TMSizes.h"
+
 @implementation MMJColorPalette
+
+@synthesize image = _image;
 
 #pragma mark -
 #pragma mark Init
@@ -44,6 +51,19 @@
     
     completion([NSArray arrayWithArray:items], nil);
     
+}
+
+#pragma mark -
+#pragma mark Public Properties
+
+- (UIImage *)image
+{
+    if (!_image) {
+        NSArray *randomArray = [self.colors randomObjects:8];
+        CGSize aSize = CGSizeMake(kPaletteImageWidth, kPaletteImageHeight);
+        _image = [UIImage imageWithColors:randomArray size:aSize];
+    }
+    return _image;
 }
 
 @end

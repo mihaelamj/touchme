@@ -41,6 +41,7 @@
 		A94225491C95F5AA007E59CD /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225481C95F5AA007E59CD /* BaseItem.m */; };
 		A942254D1C95FAE6007E59CD /* ArrayDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A942254C1C95FAE6007E59CD /* ArrayDelegate.m */; };
 		A94225501C9603F5007E59CD /* PaletteCellSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = A942254F1C9603F5007E59CD /* PaletteCellSubview.m */; };
+		A94225531C9610A1007E59CD /* NSArray+MMJRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225521C9610A1007E59CD /* NSArray+MMJRandom.m */; };
 		A978BB1A1C8E9A8300F06064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB191C8E9A8300F06064 /* main.m */; };
 		A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB1C1C8E9A8300F06064 /* AppDelegate.m */; };
 		A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A978BB241C8E9A8300F06064 /* Assets.xcassets */; };
@@ -175,6 +176,8 @@
 		A942254C1C95FAE6007E59CD /* ArrayDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrayDelegate.m; path = Protocols/Delegate/ArrayDelegate.m; sourceTree = "<group>"; };
 		A942254E1C9603F5007E59CD /* PaletteCellSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaletteCellSubview.h; path = UI/Views/Cell/PaletteCellSubview.h; sourceTree = "<group>"; };
 		A942254F1C9603F5007E59CD /* PaletteCellSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaletteCellSubview.m; path = UI/Views/Cell/PaletteCellSubview.m; sourceTree = "<group>"; };
+		A94225511C9610A1007E59CD /* NSArray+MMJRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+MMJRandom.h"; path = "Categories/Array/NSArray+MMJRandom.h"; sourceTree = "<group>"; };
+		A94225521C9610A1007E59CD /* NSArray+MMJRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MMJRandom.m"; path = "Categories/Array/NSArray+MMJRandom.m"; sourceTree = "<group>"; };
 		A978BB151C8E9A8300F06064 /* touchme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978BB191C8E9A8300F06064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A978BB1B1C8E9A8300F06064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -556,6 +559,8 @@
 			children = (
 				A9AE4D2E1C8EB883009F86B2 /* NSArray+StringHelper.h */,
 				A9AE4D2F1C8EB883009F86B2 /* NSArray+StringHelper.m */,
+				A94225511C9610A1007E59CD /* NSArray+MMJRandom.h */,
+				A94225521C9610A1007E59CD /* NSArray+MMJRandom.m */,
 			);
 			name = Array;
 			sourceTree = "<group>";
@@ -886,6 +891,7 @@
 				A942253A1C95C531007E59CD /* ColorsStore.m in Sources */,
 				A9AE4D211C8EB624009F86B2 /* UIColor+Pantone.m in Sources */,
 				A94225461C95F118007E59CD /* BaseItemsViewController.m in Sources */,
+				A94225531C9610A1007E59CD /* NSArray+MMJRandom.m in Sources */,
 				A9AE4D931C8EC1E9009F86B2 /* MASLayoutConstraint.m in Sources */,
 				A9AE4D2D1C8EB7B6009F86B2 /* UIColor+HexString.m in Sources */,
 				A942254D1C95FAE6007E59CD /* ArrayDelegate.m in Sources */,

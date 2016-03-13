@@ -14,7 +14,12 @@
 
 - (CGFloat)heightWithCustomObject:(id)customObject
 {
-    return 0;
+    return 0.0f;
+}
+
++ (CGFloat)recomendedWidth
+{
+    return 0.0f;
 }
 
 #pragma mark Cell

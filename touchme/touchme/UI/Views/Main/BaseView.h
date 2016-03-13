@@ -16,6 +16,9 @@
 #import "UIFont+TMStyle.h"
 #import "UIColor+TMStyle.h"
 
+//sizes
+#import "TMSizes.h"
+
 @interface BaseView : UIView
 
 @end

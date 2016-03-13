@@ -33,7 +33,7 @@
 }
 
 #pragma mark -
-#pragma mark Properties
+#pragma mark Public Properties
 
 - (UIImage *)image
 {

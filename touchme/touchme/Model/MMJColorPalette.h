@@ -8,10 +8,14 @@
 
 #import "BaseItem.h"
 
+//for UIImage
+#import <UIKit/UIKit.h>
+
 @interface MMJColorPalette : BaseItem
 
 @property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) NSArray *colors;
+@property (nonatomic, strong, readonly) UIImage *image;
 
 - (instancetype)initWithName:(NSString *)name colors:(NSArray *)colors;
 

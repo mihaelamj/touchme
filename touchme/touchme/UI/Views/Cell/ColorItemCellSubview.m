@@ -97,6 +97,11 @@
     return kColorItemCellHeight;
 }
 
++ (CGFloat)recomendedWidth
+{
+    return kColorItemCellWidth;
+}
+
 #pragma mark -
 #pragma mark Framework Overrides
 

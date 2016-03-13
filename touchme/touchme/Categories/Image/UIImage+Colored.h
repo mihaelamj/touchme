@@ -14,4 +14,7 @@
 
 - (UIImage *)colorize:(UIColor *)color;
 
++ (UIImage *)mergedImageFromImages:(NSArray *)images; //horizontally, takes the max height
++ (UIImage *)imageWithColors:(NSArray *)colors size:(CGSize)size;//horizontally
+
 @end

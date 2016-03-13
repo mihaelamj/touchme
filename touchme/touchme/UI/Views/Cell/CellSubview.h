@@ -14,4 +14,6 @@
 - (void)cleanView;
 - (CGFloat)heightWithCustomObject:(id)customObject;
 
++ (CGFloat)recomendedWidth;
+
 @end
