@@ -77,7 +77,7 @@
 
 + (CGSize)recomendedCellSize;
 {
-    Class contentClass = [BaseCollectionViewCell cellSubviewClass];
+    Class contentClass = [self cellSubviewClass];
     if (contentClass) {
         return CGSizeMake([contentClass recomendedWidth],
                           [contentClass recomendedHeight]);
@@ -100,13 +100,12 @@
 - (CellSubview *)cellContentView
 {
     if (!_cellContentView) {
-        Class contentClass = [BaseCollectionViewCell cellSubviewClass];
+        Class contentClass = [self.class cellSubviewClass];
         if (contentClass) {
             _cellContentView = [[contentClass alloc] init];
         }
-        return _cellContentView;
     }
-    return nil;
+    return _cellContentView;
 }
 
 @end

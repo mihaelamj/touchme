@@ -8,6 +8,9 @@
 
 #import "BaseItem.h"
 
+//model
+#import "MMJColorItem.h"
+
 //for UIImage
 #import <UIKit/UIKit.h>
 

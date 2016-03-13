@@ -59,9 +59,19 @@
 - (UIImage *)image
 {
     if (!_image) {
-        NSArray *randomArray = [self.colors randomObjects:8];
+        
+        NSArray *randomArray = [self.colors randomObjects:12];
+        NSMutableArray *colorsArray = [NSMutableArray array];
+        for (MMJColorItem *colorItem in randomArray) {
+            
+            UIColor *color = colorItem.color;
+            if (color) {
+                [colorsArray addObject:color];
+            }
+        }
+        
         CGSize aSize = CGSizeMake(kPaletteImageWidth, kPaletteImageHeight);
-        _image = [UIImage imageWithColors:randomArray size:aSize];
+        _image = [UIImage imageWithColors:colorsArray size:aSize];
     }
     return _image;
 }

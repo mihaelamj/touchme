@@ -36,11 +36,24 @@
 - (void)setupScrollView
 {
     if ([self.scrollView isKindOfClass:[UITableView class]]) {
+        
         UITableView *tv = (UITableView *)self.scrollView;
+        
+        if (self.cellClass) {
+            [tv registerClass:self.cellClass forCellReuseIdentifier:[self.cellClass reuseIdentifier]];
+        }
+        
         tv.dataSource = self.dataSource;
         tv.delegate = self.delegate;
+        
     } else if ([self.scrollView isKindOfClass:[UICollectionView class]]) {
+        
         UICollectionView *cv = (UICollectionView *)self.scrollView;
+        
+        if (self.cellClass) {
+            [cv registerClass:self.cellClass forCellWithReuseIdentifier:[self.cellClass reuseIdentifier]];
+        }
+        
         cv.dataSource = self.dataSource;
         cv.delegate = self.delegate;
     }

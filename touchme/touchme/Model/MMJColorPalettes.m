@@ -91,7 +91,7 @@
 {
     MMJColorPalettes *handler = [[MMJColorPalettes alloc] init];
     
-    NSArray *colors = [handler colorsForPalette:name];
+    NSArray *colors = [handler colorItemsForPalette:name];
     if ([colors count]) {
         return [[MMJColorPalette alloc] initWithName:name colors:colors];
     }

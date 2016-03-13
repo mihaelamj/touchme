@@ -93,9 +93,9 @@
 
 + (CGFloat)recomendedCellHeight
 {
-    Class contentClass = [BaseTableViewCell cellSubviewClass];
+    Class contentClass = [self cellSubviewClass];
     if (contentClass) {
-        return [contentClass recomendedCellHeight];
+        return [contentClass recomendedHeight];
     }
     
     return 0;
@@ -116,13 +116,12 @@
 - (CellSubview *)cellContentView
 {
     if (!_cellContentView) {
-        Class contentClass = [BaseTableViewCell cellSubviewClass];
+        Class contentClass = [self.class cellSubviewClass];
         if (contentClass) {
             _cellContentView = [[contentClass alloc] init];
         }
-        return _cellContentView;
     }
-    return nil;
+    return _cellContentView;
 }
 
 

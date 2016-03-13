@@ -79,6 +79,7 @@
             modelClass = [MMJColorItem class];
             vcTitle = NSLocalizedString(@"Colors Title", nil);
             viewAL = NSLocalizedString(@"Colors TableViewController View Accessibility Label", nil);
+            break;
         }
             
         case TMRouteType_HomeItem_CollectionView: {
@@ -87,6 +88,7 @@
             modelClass = [MMJColorItem class];
             vcTitle = NSLocalizedString(@"Colors Title", nil);
             viewAL = NSLocalizedString(@"Colors CollectionViewController View Accessibility Label", nil);
+            break;
         }
             
         case TMRouteType_HomeItem_View:

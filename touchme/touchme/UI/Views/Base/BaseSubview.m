@@ -13,9 +13,19 @@
 #pragma mark -
 #pragma mark Init
 
+- (instancetype)init
+{
+    return [self initWithOptions:0];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    return [self initWithFrame:frame options:0];
+}
+
 - (instancetype)initWithOptions:(NSInteger)options
 {
-    return [self initWithFrame:CGRectZero];
+    return [self initWithFrame:CGRectZero options:options];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame options:(NSInteger)options;
