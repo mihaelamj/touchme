@@ -33,6 +33,12 @@
 		A942252E1C95BA32007E59CD /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A942252D1C95BA32007E59CD /* BaseCollectionViewCell.m */; };
 		A94225311C95BCF3007E59CD /* PaletteItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225301C95BCF3007E59CD /* PaletteItemTableViewCell.m */; };
 		A94225341C95BD74007E59CD /* PaletteItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225331C95BD74007E59CD /* PaletteItemCollectionViewCell.m */; };
+		A94225371C95C51C007E59CD /* PalettesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225361C95C51C007E59CD /* PalettesStore.m */; };
+		A942253A1C95C531007E59CD /* ColorsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225391C95C531007E59CD /* ColorsStore.m */; };
+		A942253D1C95E781007E59CD /* ColorItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A942253C1C95E781007E59CD /* ColorItemTableViewCell.m */; };
+		A94225431C95E7F3007E59CD /* ColorItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225421C95E7F3007E59CD /* ColorItemCollectionViewCell.m */; };
+		A94225461C95F118007E59CD /* BaseItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225451C95F118007E59CD /* BaseItemsViewController.m */; };
+		A94225491C95F5AA007E59CD /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225481C95F5AA007E59CD /* BaseItem.m */; };
 		A978BB1A1C8E9A8300F06064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB191C8E9A8300F06064 /* main.m */; };
 		A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB1C1C8E9A8300F06064 /* AppDelegate.m */; };
 		A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A978BB241C8E9A8300F06064 /* Assets.xcassets */; };
@@ -150,6 +156,19 @@
 		A94225301C95BCF3007E59CD /* PaletteItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaletteItemTableViewCell.m; path = UI/Cells/PaletteItemTableViewCell.m; sourceTree = "<group>"; };
 		A94225321C95BD74007E59CD /* PaletteItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaletteItemCollectionViewCell.h; path = UI/Cells/PaletteItemCollectionViewCell.h; sourceTree = "<group>"; };
 		A94225331C95BD74007E59CD /* PaletteItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaletteItemCollectionViewCell.m; path = UI/Cells/PaletteItemCollectionViewCell.m; sourceTree = "<group>"; };
+		A94225351C95C51C007E59CD /* PalettesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PalettesStore.h; path = Stores/PalettesStore.h; sourceTree = "<group>"; };
+		A94225361C95C51C007E59CD /* PalettesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PalettesStore.m; path = Stores/PalettesStore.m; sourceTree = "<group>"; };
+		A94225381C95C531007E59CD /* ColorsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorsStore.h; path = Stores/ColorsStore.h; sourceTree = "<group>"; };
+		A94225391C95C531007E59CD /* ColorsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorsStore.m; path = Stores/ColorsStore.m; sourceTree = "<group>"; };
+		A942253B1C95E781007E59CD /* ColorItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorItemTableViewCell.h; path = UI/Cells/ColorItemTableViewCell.h; sourceTree = "<group>"; };
+		A942253C1C95E781007E59CD /* ColorItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorItemTableViewCell.m; path = UI/Cells/ColorItemTableViewCell.m; sourceTree = "<group>"; };
+		A94225411C95E7F3007E59CD /* ColorItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorItemCollectionViewCell.h; path = UI/Cells/ColorItemCollectionViewCell.h; sourceTree = "<group>"; };
+		A94225421C95E7F3007E59CD /* ColorItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorItemCollectionViewCell.m; path = UI/Cells/ColorItemCollectionViewCell.m; sourceTree = "<group>"; };
+		A94225441C95F118007E59CD /* BaseItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseItemsViewController.h; path = UI/Controllers/BaseItemsViewController.h; sourceTree = "<group>"; };
+		A94225451C95F118007E59CD /* BaseItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseItemsViewController.m; path = UI/Controllers/BaseItemsViewController.m; sourceTree = "<group>"; };
+		A94225471C95F5AA007E59CD /* BaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseItem.h; path = Model/BaseItem.h; sourceTree = "<group>"; };
+		A94225481C95F5AA007E59CD /* BaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseItem.m; path = Model/BaseItem.m; sourceTree = "<group>"; };
+		A942254A1C95F733007E59CD /* ActionableItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionableItem.h; sourceTree = "<group>"; };
 		A978BB151C8E9A8300F06064 /* touchme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978BB191C8E9A8300F06064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A978BB1B1C8E9A8300F06064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -310,6 +329,10 @@
 				A90D16851C946D8B003C4FFC /* BaseStore.m */,
 				A90D16881C946DD6003C4FFC /* HomeItemsStore.h */,
 				A90D16891C946DD6003C4FFC /* HomeItemsStore.m */,
+				A94225351C95C51C007E59CD /* PalettesStore.h */,
+				A94225361C95C51C007E59CD /* PalettesStore.m */,
+				A94225381C95C531007E59CD /* ColorsStore.h */,
+				A94225391C95C531007E59CD /* ColorsStore.m */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -338,6 +361,10 @@
 				A94225301C95BCF3007E59CD /* PaletteItemTableViewCell.m */,
 				A94225321C95BD74007E59CD /* PaletteItemCollectionViewCell.h */,
 				A94225331C95BD74007E59CD /* PaletteItemCollectionViewCell.m */,
+				A942253B1C95E781007E59CD /* ColorItemTableViewCell.h */,
+				A942253C1C95E781007E59CD /* ColorItemTableViewCell.m */,
+				A94225411C95E7F3007E59CD /* ColorItemCollectionViewCell.h */,
+				A94225421C95E7F3007E59CD /* ColorItemCollectionViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -424,6 +451,8 @@
 				A9AE4D071C8EA172009F86B2 /* BaseViewController.m */,
 				A9AE4D011C8EA128009F86B2 /* HomeViewController.h */,
 				A9AE4D021C8EA128009F86B2 /* HomeViewController.m */,
+				A94225441C95F118007E59CD /* BaseItemsViewController.h */,
+				A94225451C95F118007E59CD /* BaseItemsViewController.m */,
 				A90D16701C945D10003C4FFC /* TMTableViewController.h */,
 				A90D16711C945D10003C4FFC /* TMTableViewController.m */,
 				A90D16731C945D30003C4FFC /* TMCollectionViewController.h */,
@@ -537,6 +566,9 @@
 			children = (
 				A9AE4D391C8EB954009F86B2 /* MMJColorPalettes.h */,
 				A9AE4D3A1C8EB954009F86B2 /* MMJColorPalettes.m */,
+				A942254A1C95F733007E59CD /* ActionableItem.h */,
+				A94225471C95F5AA007E59CD /* BaseItem.h */,
+				A94225481C95F5AA007E59CD /* BaseItem.m */,
 				A90D16A11C94867A003C4FFC /* MMJColorPalette.h */,
 				A90D16A21C94867A003C4FFC /* MMJColorPalette.m */,
 				A9AE4D3D1C8EBAF9009F86B2 /* MMJColorItem.h */,
@@ -826,18 +858,24 @@
 				A942252E1C95BA32007E59CD /* BaseCollectionViewCell.m in Sources */,
 				A94225341C95BD74007E59CD /* PaletteItemCollectionViewCell.m in Sources */,
 				A90D16961C947767003C4FFC /* ColorItemCellSubview.m in Sources */,
+				A942253D1C95E781007E59CD /* ColorItemTableViewCell.m in Sources */,
 				A90D16721C945D10003C4FFC /* TMTableViewController.m in Sources */,
+				A94225371C95C51C007E59CD /* PalettesStore.m in Sources */,
 				A90D169D1C947AAA003C4FFC /* UIFont+TMStyle.m in Sources */,
 				A9AE4D721C8EC185009F86B2 /* README.mdown in Sources */,
+				A94225431C95E7F3007E59CD /* ColorItemCollectionViewCell.m in Sources */,
 				A942252A1C95BA02007E59CD /* BaseTableViewCell.m in Sources */,
 				A9AE4D421C8EBF36009F86B2 /* UIImage+Colored.m in Sources */,
 				A9AE4D341C8EB89B009F86B2 /* NSString+MethodList.m in Sources */,
 				A9AE4D9C1C8EC285009F86B2 /* BaseSubview.m in Sources */,
+				A94225491C95F5AA007E59CD /* BaseItem.m in Sources */,
 				A90D167C1C9462E8003C4FFC /* TMRoute.m in Sources */,
 				A90D16A01C947C78003C4FFC /* UILabel+TMStyle.m in Sources */,
 				A9AE4D3F1C8EBAF9009F86B2 /* MMJColorItem.m in Sources */,
 				A90D16821C946ACA003C4FFC /* HomeViewControllerDelegate.m in Sources */,
+				A942253A1C95C531007E59CD /* ColorsStore.m in Sources */,
 				A9AE4D211C8EB624009F86B2 /* UIColor+Pantone.m in Sources */,
+				A94225461C95F118007E59CD /* BaseItemsViewController.m in Sources */,
 				A9AE4D931C8EC1E9009F86B2 /* MASLayoutConstraint.m in Sources */,
 				A9AE4D2D1C8EB7B6009F86B2 /* UIColor+HexString.m in Sources */,
 				A9AE4D901C8EC1E9009F86B2 /* MASCompositeConstraint.m in Sources */,

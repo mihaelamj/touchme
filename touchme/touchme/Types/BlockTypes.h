@@ -14,3 +14,6 @@ typedef dispatch_block_t SimpleBlock;
 //cell configure block
 typedef void (^CellConfigureBlock)(id cell, id item);
 
+//fetching items with error
+typedef void (^ArrayCompletionBlock)(NSArray *array, NSError *error);
+

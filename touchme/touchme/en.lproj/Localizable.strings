@@ -12,18 +12,14 @@
 "Colors Title" = "Colors";
 "TMPlainViewController Title"= "PlainView Screen";
 
-//"TMTableViewController Title" = "TableView Screen";
-//"TMCollectionViewController Title"= "CollectionView Screen";
-
 
 //Accessibility Labels
 "HomeViewController View Accessibility Label" = "HomeViewController Screen View";
 "ColorPalettes TableViewController View Accessibility Label" = "ColorPalettes TableViewController Screen View";
 "ColorPalettes CollectionViewController View Accessibility Label" = "ColorPalettes CollectionViewController Screen View";
+"Colors TableViewController View Accessibility Label" = "Colors TableViewController Screen View";
+"Colors CollectionViewController View Accessibility Label" = "Colors CollectionViewController Screen View";
 "TMPlainViewController View Accessibility Label" = "TMPlainViewController Screen View";
-
-//"TMTableViewController View Accessibility Label" = "TMTableViewController Screen View";
-//"TMCollectionViewController View Accessibility Label" = "TMCollectionViewController Screen View";
 
 
 //HomeItemType Titles

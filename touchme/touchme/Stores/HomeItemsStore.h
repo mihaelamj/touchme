@@ -13,6 +13,6 @@
 
 @interface HomeItemsStore : BaseStore
 
-+ (NSArray *)itemsWithError:(NSError **)error controller:(BaseViewController *)controller;
+//+ (NSArray *)itemsWithError:(NSError **)error controller:(BaseViewController *)controller;
 
 @end

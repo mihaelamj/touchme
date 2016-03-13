@@ -11,6 +11,9 @@
 //enum
 #import "TMRouteType.h"
 
+//enum
+#import "HomeItemType.h"
+
 //VC
 #import "BaseViewController.h"
 
@@ -21,8 +24,11 @@
 @property (nonatomic, readonly) TMRouteType type;
 @property (nonatomic, strong, readonly) NSString *name;
 
+//instance
 - (void)navigateToRouteFromViewController:(BaseViewController *)fromViewController params:(NSDictionary *)params modal:(BOOL)modal;
 
+//class
 + (void)navigateRouteType:(TMRouteType)routeType fromViewController:(BaseViewController *)fromViewController params:(NSDictionary *)params modal:(BOOL)modal;
++ (TMRouteType)routeTypeForHomeItemType:(HomeItemType)homeItemType;
 
 @end

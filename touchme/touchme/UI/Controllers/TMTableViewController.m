@@ -11,20 +11,14 @@
 //main View
 #import "TMTableView.h"
 
-//base cell class
-#import "BaseTableViewCell.h"
-
-//base store class
-#import "BaseStore.h"
+//data source
+#import "ArrayDataSource.h"
 
 @interface TMTableViewController ()
 
 @property (nonatomic, strong) TMTableView *mainView;
 
-@property (nonatomic, unsafe_unretained, readwrite) Class cellClass;
-@property (nonatomic, unsafe_unretained, readwrite) Class storeClass;
-
-//
+- (void)refreshDataSource;
 
 @end
 
@@ -46,20 +40,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
-#pragma mark -
-#pragma mark Public Templates
-
-- (void)handleParams
-{
-    if (!self.params) {
-        return;
-    }
-    
-    self.storeClass = self.params[TMKEY_STORE_CLASS];
-    self.cellClass = self.params[TMKEY_CELL_CLASS];
-    self.title = self.params[TMKEY_VIEW_CONTROLLER_TITLE];;
-    self.view.accessibilityLabel = self.params[TMKEY_VIEW_ACCSESSIBILITY_LABEL];
-}
 
 #pragma mark -
 #pragma mark Private Properties

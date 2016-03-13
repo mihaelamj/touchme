@@ -8,6 +8,9 @@
 
 #import "MMJColorPalette.h"
 
+//helper
+#import "MMJColorPalettes.h"
+
 @implementation MMJColorPalette
 
 #pragma mark -
@@ -21,6 +24,26 @@
         _colors = colors;
     }
     return self;
+}
+
+#pragma mark -
+#pragma mark Public Methods
+
++ (void)itemsWithCompletion:(ArrayCompletionBlock)completion
+{
+    NSMutableArray *items = [NSMutableArray array];
+    
+    //fetch palette names
+    NSArray *paletteNames = [MMJColorPalettes paletteNames];
+    
+    for (NSString *paletteName in paletteNames) {
+        //make palettes
+        MMJColorPalette *palette = [MMJColorPalettes paletteWithName:paletteName];
+        [items addObject:palette];
+    }
+    
+    completion([NSArray arrayWithArray:items], nil);
+    
 }
 
 @end

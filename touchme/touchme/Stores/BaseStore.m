@@ -19,4 +19,14 @@
     return nil;
 }
 
++ (NSArray *)itemsWithError:(NSError **)error controller:(BaseViewController *)controller
+{
+    return [self itemsWithError:error controller:nil];
+}
+
++ (void)itemsWithCompletion:(ArrayCompletionBlock)completion controller:(BaseViewController *)controller
+{
+    completion(nil, nil);
+}
+
 @end

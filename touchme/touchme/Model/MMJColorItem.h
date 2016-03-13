@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+//for UIImage
 #import <UIKit/UIKit.h>
+
+//block types
+#import "BlockTypes.h"
 
 @interface MMJColorItem : NSObject
 
@@ -17,6 +21,8 @@
 @property (nonatomic, strong, readonly) UIColor *color;
 @property (nonatomic, strong, readonly) NSString *hexString;
 @property (nonatomic, strong, readonly) UIImage *image;
+
+@property (nonatomic,copy) SimpleBlock actionBlock;
 
 - (instancetype)initWithName:(NSString *)name color:(UIColor *)color hexString:(NSString *)hexString paletteName:(NSString *)paletteName;
 

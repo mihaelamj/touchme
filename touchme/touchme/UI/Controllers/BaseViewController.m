@@ -28,6 +28,7 @@
         _parentController = nil;
         _isEmbeddedController = NO;
         _params = params;
+        _routeType = TMRouteType_Count;
     }
     return self;
 }
@@ -37,6 +38,13 @@
 
 - (void)handleParams
 {
+    if (!self.params) {
+        return;
+    }
+    NSNumber *typeHolder = self.params[TMKEY_ROUTE_TYPE];
+    _routeType = (TMRouteType)[typeHolder integerValue];
+    self.title = self.params[TMKEY_VIEW_CONTROLLER_TITLE];;
+    self.view.accessibilityLabel = self.params[TMKEY_VIEW_ACCSESSIBILITY_LABEL];
 }
 
 #pragma mark -

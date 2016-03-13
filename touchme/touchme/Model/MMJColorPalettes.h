@@ -16,7 +16,8 @@
 @property (strong, nonatomic) NSArray *palletes;
 
 - (NSArray *)colorsForPalette:(NSString *)palette;
-
 + (MMJColorPalette *)paletteWithName:(NSString *)name;
+
++ (NSArray *)paletteNames;
 
 @end

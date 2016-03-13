@@ -6,8 +6,8 @@
 //  Copyright © 2016 Mihaela Mihaljevic Jakic. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseItemsViewController.h"
 
-@interface TMCollectionViewController : BaseViewController
+@interface TMCollectionViewController : BaseItemsViewController
 
 @end

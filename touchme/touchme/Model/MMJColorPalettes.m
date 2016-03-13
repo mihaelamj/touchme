@@ -41,7 +41,8 @@
 - (NSArray *)palletes
 {
     if (!_palletes) {
-        _palletes = @[@"copic", @"crayola", @"pantone", @"html", @"crayon"];
+        _palletes = [MMJColorPalettes paletteNames];
+//        _palletes = @[@"copic", @"crayola", @"pantone", @"html", @"crayon"];
     }
     return _palletes;
 }
@@ -53,6 +54,11 @@
  */
 
 #pragma mark - Public methods
+
++ (NSArray *)paletteNames
+{
+    return @[@"copic", @"crayola", @"pantone", @"html", @"crayon"];
+}
 
 - (NSArray *)colorsForPalette:(NSString *)palette
 {

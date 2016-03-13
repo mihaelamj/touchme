@@ -10,14 +10,16 @@
 
 //model
 #import "HomeItem.h"
-//route
-#import "TMRoute.h"
-//params keys
-#import "TM_Keys.h"
+
+//model class
+#import "MMJColorPalette.h"
 
 //cell classes
 #import "PaletteItemTableViewCell.h"
 #import "PaletteItemCollectionViewCell.h"
+
+//store classes
+#import "PalettesStore.h"
 
 @interface HomeItemsStore ()
 
@@ -40,24 +42,6 @@
 #pragma mark -
 #pragma mark Private Methods
 
-- (TMRouteType)routeTypeForHomeItemType:(HomeItemType)homeItemType
-{
-    switch (homeItemType) {
-        case HomeItemType_TableView:
-            return TMRouteType_HomeItem_TableView;
-        case HomeItemType_CollectionView:
-            return TMRouteType_HomeItem_CollectionView;
-        case HomeItemType_View:
-            return TMRouteType_HomeItem_View;
-            
-//        case TMRouteType_ColorPalettes:
-//            TMRouteType_Colors,
-            
-        default:
-            return TMRouteType_Count;
-    }
-}
-
 - (NSArray *)makeItemsWithController:(BaseViewController *)controller
 {
     NSArray *items = [HomeItem itemArray];
@@ -66,10 +50,10 @@
     
     for (HomeItem *item in items) {
         
-        TMRouteType routeType = [self routeTypeForHomeItemType:item.type];
-        
+        TMRouteType routeType = [TMRoute routeTypeForHomeItemType:item.type];
+        NSDictionary *params = [HomeItemsStore paramsForRouteType:routeType];
         item.actionBlock = ^{
-            [TMRoute navigateRouteType:routeType fromViewController:weakController params:nil modal:NO];
+            [TMRoute navigateRouteType:routeType fromViewController:weakController params:params modal:NO];
         };
         
     }
@@ -77,24 +61,30 @@
     return items;
 }
 
+#pragma mark Helpers
+
 + (NSDictionary *)paramsForRouteType:(TMRouteType)routeType
 {
     Class storeClas = nil;
     Class cellClass = nil;
+    Class modelClass = nil;
     NSString *vcTitle = nil;
     NSString *viewAL = nil;
 
     switch (routeType) {
+            
         case TMRouteType_HomeItem_TableView: {
-            storeClas = [self class];
+            storeClas = [PalettesStore class];
             cellClass = [PaletteItemTableViewCell class];
+            modelClass = [MMJColorPalette class];
             vcTitle = NSLocalizedString(@"Color Palettes Title", nil);
             viewAL = NSLocalizedString(@"ColorPalettes TableViewController View Accessibility Label", nil);
         }
 
         case TMRouteType_HomeItem_CollectionView: {
-            storeClas = [self class];
+            storeClas = [PalettesStore class];
             cellClass = [PaletteItemCollectionViewCell class];
+            modelClass = [MMJColorPalette class];
             vcTitle = NSLocalizedString(@"Color Palettes Title", nil);
             viewAL = NSLocalizedString(@"ColorPalettes CollectionViewController View Accessibility Label", nil);
         }
@@ -108,8 +98,10 @@
 
     return @{TMKEY_STORE_CLASS: storeClas,
              TMKEY_VIEW_CONTROLLER_TITLE: cellClass,
+             TMKEY_MODEL_CLASS: modelClass,
              TMKEY_VIEW_ACCSESSIBILITY_LABEL: vcTitle,
-             TMKEY_CELL_CLASS: viewAL
+             TMKEY_CELL_CLASS: viewAL,
+             TMKEY_ROUTE_TYPE : @(routeType)
              };
 }
 

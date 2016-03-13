@@ -16,9 +16,6 @@
 #import "TMCollectionViewController.h"
 #import "TMPlainViewController.h"
 
-#import "ColorPalettesTableViewController.h"
-
-
 @implementation TMRoute
 
 #pragma mark -
@@ -60,6 +57,21 @@
             [presenter presentViewController:toViewController animated:YES completion:^{
             }];
         }
+    }
+}
+
++ (TMRouteType)routeTypeForHomeItemType:(HomeItemType)homeItemType
+{
+    switch (homeItemType) {
+        case HomeItemType_TableView:
+            return TMRouteType_HomeItem_TableView;
+        case HomeItemType_CollectionView:
+            return TMRouteType_HomeItem_CollectionView;
+        case HomeItemType_View:
+            return TMRouteType_HomeItem_View;
+            
+        default:
+            return TMRouteType_Count;
     }
 }
 
