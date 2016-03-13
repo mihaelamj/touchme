@@ -11,7 +11,7 @@
 "Color Palettes Title" = "Palettes";
 "Colors Title" = "Colors";
 "TMPlainViewController Title"= "PlainView Screen";
-
+"Color Title" = "Color";
 
 //Accessibility Labels
 "HomeViewController View Accessibility Label" = "HomeViewController Screen View";
@@ -20,6 +20,7 @@
 "Colors TableViewController View Accessibility Label" = "Colors TableViewController Screen View";
 "Colors CollectionViewController View Accessibility Label" = "Colors CollectionViewController Screen View";
 "TMPlainViewController View Accessibility Label" = "TMPlainViewController Screen View";
+"Color ViewController View Accessibility Label" = "Color ViewController View";
 
 
 //HomeItemType Titles

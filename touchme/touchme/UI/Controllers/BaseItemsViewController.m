@@ -77,6 +77,11 @@
     self.storeClass = self.params[TMKEY_STORE_CLASS];
     self.cellClass = self.params[TMKEY_CELL_CLASS];
     self.modelClass = self.params[TMKEY_MODEL_CLASS];
+    
+    NSArray *items = self.params[TMKEY_PARENT_ITEMS];
+    if ([items isKindOfClass:[NSArray class]]) {
+        self.objects = items;
+    }
 }
 
 #pragma mark -
@@ -87,6 +92,12 @@
     if (!self.storeClass) {
         return;
     }
+    
+    if ([self.objects count]) {
+        [self refreshProtocol];
+        return;
+    }
+    
     
     [self.storeClass itemsWithCompletion:^(NSArray *array, NSError *error) {
         if (error) {

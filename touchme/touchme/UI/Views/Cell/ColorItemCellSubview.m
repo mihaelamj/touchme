@@ -14,6 +14,8 @@
 //sizes
 #import "TMSizes.h"
 
+#define OFFSET_MULTI 5.0f
+
 @interface ColorItemCellSubview ()
 
 @property (nonatomic, strong) UIImageView *colorImageView;
@@ -43,16 +45,16 @@
 {
     //image on the left, centerd on Y
     [self.colorImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset);
+        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*OFFSET_MULTI);
         make.centerY.equalTo(self.mas_centerY);
         make.height.equalTo(self.mas_height).multipliedBy(0.72);
-        make.width.equalTo(self.colorImageView.mas_width);
+        make.width.equalTo(self.colorImageView.mas_height).multipliedBy(2.5f);
     }];
     
     [self.colorNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.colorImageView.mas_top);
-        make.left.equalTo(self.colorImageView.mas_right).with.offset(kDefaultCellOffset);
-        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset);
+        make.left.equalTo(self.colorImageView.mas_right).with.offset(kDefaultCellOffset*OFFSET_MULTI);
+        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset*OFFSET_MULTI);
     }];
     
     [self.hexColorNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -61,8 +63,8 @@
     }];
     
     [self.palleteNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.hexColorNameLabel.mas_right).with.offset(kDefaultCellOffset);
-        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset);
+        make.left.equalTo(self.hexColorNameLabel.mas_right).with.offset(kDefaultCellOffset*OFFSET_MULTI);
+        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset*OFFSET_MULTI);
     }];
 }
 

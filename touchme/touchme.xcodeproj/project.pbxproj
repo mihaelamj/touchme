@@ -681,10 +681,10 @@
 			children = (
 				A9AE4D9F1C8EC30E009F86B2 /* CellSubview.h */,
 				A9AE4DA01C8EC30E009F86B2 /* CellSubview.m */,
-				A90D16941C947767003C4FFC /* ColorItemCellSubview.h */,
-				A90D16951C947767003C4FFC /* ColorItemCellSubview.m */,
 				A942254E1C9603F5007E59CD /* PaletteCellSubview.h */,
 				A942254F1C9603F5007E59CD /* PaletteCellSubview.m */,
+				A90D16941C947767003C4FFC /* ColorItemCellSubview.h */,
+				A90D16951C947767003C4FFC /* ColorItemCellSubview.m */,
 			);
 			name = CellSubviews;
 			sourceTree = "<group>";

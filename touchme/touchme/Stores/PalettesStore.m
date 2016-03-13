@@ -53,7 +53,7 @@
     for (MMJColorPalette *palette in items) {
         
         TMRouteType routeType = controller.routeType;
-        NSDictionary *params = [PalettesStore paramsForRouteType:routeType];
+        NSDictionary *params = [PalettesStore paramsForRouteType:routeType parentItems:palette.colors];
         palette.actionBlock = ^{
             [TMRoute navigateRouteType:routeType fromViewController:weakController params:params modal:NO];
         };
@@ -63,7 +63,7 @@
 
 #pragma mark Helpers
 
-+ (NSDictionary *)paramsForRouteType:(TMRouteType)routeType
++ (NSDictionary *)paramsForRouteType:(TMRouteType)routeType parentItems:(id)parentItems
 {
     Class storeClas = nil;
     Class cellClass = nil;
@@ -98,13 +98,29 @@
             return nil;
     }
     
-    return @{TMKEY_STORE_CLASS: storeClas,
-             TMKEY_CELL_CLASS: cellClass,
-             TMKEY_MODEL_CLASS: modelClass,
-             TMKEY_VIEW_CONTROLLER_TITLE: vcTitle,
-             TMKEY_VIEW_ACCSESSIBILITY_LABEL: viewAL,
-             TMKEY_ROUTE_TYPE : @(routeType)
-             };
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    [dict setObject:@(routeType) forKey:TMKEY_ROUTE_TYPE];
+    
+    if (storeClas) {
+        [dict setObject:storeClas forKey:TMKEY_STORE_CLASS];
+    }
+    if (cellClass) {
+        [dict setObject:cellClass forKey:TMKEY_CELL_CLASS];
+    }
+    if (modelClass) {
+        [dict setObject:modelClass forKey:TMKEY_MODEL_CLASS];
+    }
+    if (parentItems) {
+        [dict setObject:parentItems forKey:TMKEY_PARENT_ITEMS];
+    }
+    if (vcTitle) {
+        [dict setObject:vcTitle forKey:TMKEY_VIEW_CONTROLLER_TITLE];
+    }
+    if (viewAL) {
+        [dict setObject:viewAL forKey:TMKEY_VIEW_ACCSESSIBILITY_LABEL];
+    }
+
+    return dict;
 }
 
 

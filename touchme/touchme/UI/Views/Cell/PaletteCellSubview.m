@@ -11,6 +11,8 @@
 //model
 #import "MMJColorPalette.h"
 
+#define OFFSET_MULTI 5.0f
+
 @interface PaletteCellSubview ()
 
 @property (nonatomic, strong) UIImageView *paletteImageView;
@@ -41,21 +43,21 @@
         make.centerY.equalTo(self.mas_centerY);
         make.height.equalTo(@(kPaletteImageHeight));
         make.width.equalTo(@(kPaletteImageWidth));
-        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset*3);
+        make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset*OFFSET_MULTI);
     }];
     
     //name on top, left
     [self.paletteNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_top);
-        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*3);
-        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset*3);
+        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*OFFSET_MULTI);
+        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset*OFFSET_MULTI);
     }];
     
     //number of colors, bottol left
     [self.numberOfColorsLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.mas_bottom);
-        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*3);
-        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset*3);
+        make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*OFFSET_MULTI);
+        make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset*OFFSET_MULTI);
     }];
 }
 
