@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+//model
+#import "MMJColorPalette.h"
+
 @interface MMJColorPalettes : NSObject
 
 @property (strong, nonatomic) NSArray *palletes;
 
 - (NSArray *)colorsForPalette:(NSString *)palette;
+
++ (MMJColorPalette *)paletteWithName:(NSString *)name;
 
 @end

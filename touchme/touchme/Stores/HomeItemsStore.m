@@ -12,6 +12,12 @@
 #import "HomeItem.h"
 //route
 #import "TMRoute.h"
+//params keys
+#import "TM_Keys.h"
+
+//cell classes
+#import "PaletteItemTableViewCell.h"
+#import "PaletteItemCollectionViewCell.h"
 
 @interface HomeItemsStore ()
 
@@ -44,6 +50,9 @@
         case HomeItemType_View:
             return TMRouteType_HomeItem_View;
             
+//        case TMRouteType_ColorPalettes:
+//            TMRouteType_Colors,
+            
         default:
             return TMRouteType_Count;
     }
@@ -66,6 +75,42 @@
     }
     
     return items;
+}
+
++ (NSDictionary *)paramsForRouteType:(TMRouteType)routeType
+{
+    Class storeClas = nil;
+    Class cellClass = nil;
+    NSString *vcTitle = nil;
+    NSString *viewAL = nil;
+
+    switch (routeType) {
+        case TMRouteType_HomeItem_TableView: {
+            storeClas = [self class];
+            cellClass = [PaletteItemTableViewCell class];
+            vcTitle = NSLocalizedString(@"Color Palettes Title", nil);
+            viewAL = NSLocalizedString(@"ColorPalettes TableViewController View Accessibility Label", nil);
+        }
+
+        case TMRouteType_HomeItem_CollectionView: {
+            storeClas = [self class];
+            cellClass = [PaletteItemCollectionViewCell class];
+            vcTitle = NSLocalizedString(@"Color Palettes Title", nil);
+            viewAL = NSLocalizedString(@"ColorPalettes CollectionViewController View Accessibility Label", nil);
+        }
+
+        case TMRouteType_HomeItem_View:
+            return nil;
+
+        default:
+            return nil;
+    }
+
+    return @{TMKEY_STORE_CLASS: storeClas,
+             TMKEY_VIEW_CONTROLLER_TITLE: cellClass,
+             TMKEY_VIEW_ACCSESSIBILITY_LABEL: vcTitle,
+             TMKEY_CELL_CLASS: viewAL
+             };
 }
 
 @end

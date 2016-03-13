@@ -8,15 +8,23 @@
 
 //VC Titles
 "HomeViewController Title" = "Home Screen";
-"TMTableViewController Title" = "TableView Screen";
-"TMCollectionViewController Title"= "CollectionView Screen";
+"Color Palettes Title" = "Palettes";
+"Colors Title" = "Colors";
 "TMPlainViewController Title"= "PlainView Screen";
+
+//"TMTableViewController Title" = "TableView Screen";
+//"TMCollectionViewController Title"= "CollectionView Screen";
+
 
 //Accessibility Labels
 "HomeViewController View Accessibility Label" = "HomeViewController Screen View";
-"TMTableViewController View Accessibility Label" = "TMTableViewController Screen View";
-"TMCollectionViewController View Accessibility Label" = "TMCollectionViewController Screen View";
+"ColorPalettes TableViewController View Accessibility Label" = "ColorPalettes TableViewController Screen View";
+"ColorPalettes CollectionViewController View Accessibility Label" = "ColorPalettes CollectionViewController Screen View";
 "TMPlainViewController View Accessibility Label" = "TMPlainViewController Screen View";
+
+//"TMTableViewController View Accessibility Label" = "TMTableViewController Screen View";
+//"TMCollectionViewController View Accessibility Label" = "TMCollectionViewController Screen View";
+
 
 //HomeItemType Titles
 "HomeItemType_TableView Title" = "Table View";

@@ -1,5 +1,5 @@
 //
-//  TMCollectionView.h
+//  ColorPalettesTableView.h
 //  touchme
 //
 //  Created by Mihaela Mihaljevic Jakic on 12/03/16.
@@ -8,8 +8,8 @@
 
 #import "BaseView.h"
 
-@interface TMCollectionView : BaseView
+@interface ColorPalettesTableView : BaseView
 
-@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

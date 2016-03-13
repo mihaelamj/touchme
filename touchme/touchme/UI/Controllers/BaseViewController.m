@@ -27,7 +27,7 @@
         _modal = modal;
         _parentController = nil;
         _isEmbeddedController = NO;
-        [self handleParams:params];
+        _params = params;
     }
     return self;
 }
@@ -35,9 +35,8 @@
 #pragma mark -
 #pragma mark Public Templates
 
-- (void)handleParams:(NSDictionary *)params
+- (void)handleParams
 {
-    //
 }
 
 #pragma mark -
@@ -49,6 +48,8 @@
     
     //move content below navigation bar
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    [self handleParams];
 }
 
 - (void)viewDidAppear:(BOOL)animated

@@ -16,6 +16,9 @@
 #import "TMCollectionViewController.h"
 #import "TMPlainViewController.h"
 
+#import "ColorPalettesTableViewController.h"
+
+
 @implementation TMRoute
 
 #pragma mark -

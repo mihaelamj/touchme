@@ -81,6 +81,18 @@
     
 }
 
++ (MMJColorPalette *)paletteWithName:(NSString *)name
+{
+    MMJColorPalettes *handler = [[MMJColorPalettes alloc] init];
+    
+    NSArray *colors = [handler colorsForPalette:name];
+    if ([colors count]) {
+        return [[MMJColorPalette alloc] initWithName:name colors:colors];
+    }
+    return nil;
+    
+}
+
 #pragma mark - 
 #pragma mark Private Methods
 
@@ -99,6 +111,5 @@
     NSRange colorNameRange = NSMakeRange(palleteNameRange.length, colorRange.location - palleteNameRange.length);
     return [colorSelectorName substringWithRange:colorNameRange];
 }
-
 
 @end
