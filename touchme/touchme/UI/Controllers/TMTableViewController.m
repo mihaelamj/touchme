@@ -25,6 +25,14 @@
 @implementation TMTableViewController
 
 #pragma mark -
+#pragma mark Public Templates
+
+- (UIScrollView *)scrollView
+{
+    return self.mainView.tableView;
+}
+
+#pragma mark -
 #pragma mark View Lifecycle
 
 - (void)loadView

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-//needed for UITableViewDataSource to be available
+//needed for UITableViewDelegate to be available
 #import <UIKit/UIKit.h>
 
 //model

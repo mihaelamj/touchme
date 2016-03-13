@@ -14,6 +14,8 @@
 
 //data source
 #import "ArrayDataSource.h"
+//delegate
+#import "ArrayDelegate.h"
 
 //base store class
 #import "BaseStore.h"
@@ -27,8 +29,12 @@
 @property (nonatomic, strong) NSArray *objects;
 //data source
 @property (nonatomic, strong) ArrayDataSource *dataSource;
+@property (nonatomic, strong) ArrayDelegate *delegate;
 
+//to override if needed
 - (void)loadItems;
-- (void)refreshDataSource;
+- (void)refreshProtocol;
+
+- (UIScrollView *)scrollView;
 
 @end

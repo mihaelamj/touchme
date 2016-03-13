@@ -39,6 +39,8 @@
 		A94225431C95E7F3007E59CD /* ColorItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225421C95E7F3007E59CD /* ColorItemCollectionViewCell.m */; };
 		A94225461C95F118007E59CD /* BaseItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225451C95F118007E59CD /* BaseItemsViewController.m */; };
 		A94225491C95F5AA007E59CD /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A94225481C95F5AA007E59CD /* BaseItem.m */; };
+		A942254D1C95FAE6007E59CD /* ArrayDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A942254C1C95FAE6007E59CD /* ArrayDelegate.m */; };
+		A94225501C9603F5007E59CD /* PaletteCellSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = A942254F1C9603F5007E59CD /* PaletteCellSubview.m */; };
 		A978BB1A1C8E9A8300F06064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB191C8E9A8300F06064 /* main.m */; };
 		A978BB1D1C8E9A8300F06064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A978BB1C1C8E9A8300F06064 /* AppDelegate.m */; };
 		A978BB251C8E9A8300F06064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A978BB241C8E9A8300F06064 /* Assets.xcassets */; };
@@ -169,6 +171,10 @@
 		A94225471C95F5AA007E59CD /* BaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseItem.h; path = Model/BaseItem.h; sourceTree = "<group>"; };
 		A94225481C95F5AA007E59CD /* BaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseItem.m; path = Model/BaseItem.m; sourceTree = "<group>"; };
 		A942254A1C95F733007E59CD /* ActionableItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionableItem.h; sourceTree = "<group>"; };
+		A942254B1C95FAE6007E59CD /* ArrayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrayDelegate.h; path = Protocols/Delegate/ArrayDelegate.h; sourceTree = "<group>"; };
+		A942254C1C95FAE6007E59CD /* ArrayDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrayDelegate.m; path = Protocols/Delegate/ArrayDelegate.m; sourceTree = "<group>"; };
+		A942254E1C9603F5007E59CD /* PaletteCellSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaletteCellSubview.h; path = UI/Views/Cell/PaletteCellSubview.h; sourceTree = "<group>"; };
+		A942254F1C9603F5007E59CD /* PaletteCellSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaletteCellSubview.m; path = UI/Views/Cell/PaletteCellSubview.m; sourceTree = "<group>"; };
 		A978BB151C8E9A8300F06064 /* touchme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A978BB191C8E9A8300F06064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A978BB1B1C8E9A8300F06064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -316,6 +322,8 @@
 		A90D16831C946AD0003C4FFC /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				A942254B1C95FAE6007E59CD /* ArrayDelegate.h */,
+				A942254C1C95FAE6007E59CD /* ArrayDelegate.m */,
 				A90D16801C946ACA003C4FFC /* HomeViewControllerDelegate.h */,
 				A90D16811C946ACA003C4FFC /* HomeViewControllerDelegate.m */,
 			);
@@ -670,6 +678,8 @@
 				A9AE4DA01C8EC30E009F86B2 /* CellSubview.m */,
 				A90D16941C947767003C4FFC /* ColorItemCellSubview.h */,
 				A90D16951C947767003C4FFC /* ColorItemCellSubview.m */,
+				A942254E1C9603F5007E59CD /* PaletteCellSubview.h */,
+				A942254F1C9603F5007E59CD /* PaletteCellSubview.m */,
 			);
 			name = CellSubviews;
 			sourceTree = "<group>";
@@ -878,6 +888,7 @@
 				A94225461C95F118007E59CD /* BaseItemsViewController.m in Sources */,
 				A9AE4D931C8EC1E9009F86B2 /* MASLayoutConstraint.m in Sources */,
 				A9AE4D2D1C8EB7B6009F86B2 /* UIColor+HexString.m in Sources */,
+				A942254D1C95FAE6007E59CD /* ArrayDelegate.m in Sources */,
 				A9AE4D901C8EC1E9009F86B2 /* MASCompositeConstraint.m in Sources */,
 				A9AE4D161C8EB276009F86B2 /* UIColor+Copic.m in Sources */,
 				A90D16621C944CF4003C4FFC /* NSString+HomeItemType.m in Sources */,
@@ -887,6 +898,7 @@
 				A9AE4D031C8EA128009F86B2 /* HomeViewController.m in Sources */,
 				A90D16931C947708003C4FFC /* TMPlainView.m in Sources */,
 				A90D167F1C946378003C4FFC /* NSString+TMRouteType.m in Sources */,
+				A94225501C9603F5007E59CD /* PaletteCellSubview.m in Sources */,
 				A90D16861C946D8B003C4FFC /* BaseStore.m in Sources */,
 				A9AE4D271C8EB732009F86B2 /* UIColor+Crayon.m in Sources */,
 				A9AE4D941C8EC1E9009F86B2 /* MASViewAttribute.m in Sources */,

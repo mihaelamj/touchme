@@ -20,6 +20,14 @@
 @implementation TMCollectionViewController
 
 #pragma mark -
+#pragma mark Public Templates
+
+- (UIScrollView *)scrollView
+{
+    return nil;
+}
+
+#pragma mark -
 #pragma mark View Lifecycle
 
 - (void)loadView

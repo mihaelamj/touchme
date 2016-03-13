@@ -16,11 +16,18 @@
 #import "UIFont+TMStyle.h"
 #import "UIColor+TMStyle.h"
 
+//content view
+#import "CellSubview.h"
+
 @interface BaseTableViewCell : UITableViewCell
 
 //static
 + (CGFloat)recomendedCellHeight;//abstract
 + (NSString *)reuseIdentifier;
+
+//content
++ (Class)cellSubviewClass;
+@property (nonatomic, strong) CellSubview *cellContentView;
 
 //data
 - (void)customize:(id)customObject; //abstract

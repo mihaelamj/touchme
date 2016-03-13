@@ -6,23 +6,18 @@
 //  Copyright © 2016 Mihaela Mihaljevic Jakic. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseItem.h"
 
 //for UIImage
 #import <UIKit/UIKit.h>
 
-//block types
-#import "BlockTypes.h"
-
-@interface MMJColorItem : NSObject
+@interface MMJColorItem : BaseItem
 
 @property (nonatomic, strong, readonly) NSString *paletteName;
 @property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) UIColor *color;
 @property (nonatomic, strong, readonly) NSString *hexString;
 @property (nonatomic, strong, readonly) UIImage *image;
-
-@property (nonatomic,copy) SimpleBlock actionBlock;
 
 - (instancetype)initWithName:(NSString *)name color:(UIColor *)color hexString:(NSString *)hexString paletteName:(NSString *)paletteName;
 

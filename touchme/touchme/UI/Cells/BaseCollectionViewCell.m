@@ -35,20 +35,36 @@
 
 - (void)addCustomSubviews
 {
+    if (self.cellContentView) {
+        [self.contentView addSubview:self.cellContentView];
+    }
 }
 
 - (void)setSubviewConstraints
 {
+    //occupy the whole area, with offsets
+    [self.cellContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentView.mas_left);
+        make.right.equalTo(self.contentView.mas_right);
+        make.top.equalTo(self.contentView.mas_top);
+        make.bottom.equalTo(self.contentView.mas_bottom);
+    }];
 }
 
 #pragma mark Data
 
 - (void)customize:(id)customObject
 {
+    if (self.cellContentView) {
+        [self.cellContentView customize:customObject];
+    }
 }
 
 - (void)cleanView
 {
+    if (self.cellContentView) {
+        [self.cellContentView cleanView];
+    }
 }
 
 #pragma mark Static
@@ -61,6 +77,10 @@
 
 + (CGSize)recomendedCellSize;
 {
+    Class contentClass = [BaseCollectionViewCell cellSubviewClass];
+    if (contentClass) {
+        return [contentClass recomendedCellSize];
+    }
     return CGSizeZero;
 }
 
@@ -71,6 +91,21 @@
 {
     [self cleanView];
     [super prepareForReuse];
+}
+
+#pragma mark -
+#pragma mark Properties
+
+- (CellSubview *)cellContentView
+{
+    if (!_cellContentView) {
+        Class contentClass = [BaseCollectionViewCell cellSubviewClass];
+        if (contentClass) {
+            _cellContentView = [[contentClass alloc] init];
+        }
+        return _cellContentView;
+    }
+    return nil;
 }
 
 @end

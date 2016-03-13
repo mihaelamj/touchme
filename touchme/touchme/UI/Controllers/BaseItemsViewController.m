@@ -10,12 +10,50 @@
 
 @interface BaseItemsViewController ()
 
+@property (nonatomic, weak) UIScrollView *scrollView;
+
 @end
 
 @implementation BaseItemsViewController
 
 #pragma mark -
+#pragma mark View Lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self setupScrollView];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self loadItems];
+}
+
+#pragma mark Helper
+
+- (void)setupScrollView
+{
+    if ([self.scrollView isKindOfClass:[UITableView class]]) {
+        UITableView *tv = (UITableView *)self.scrollView;
+        tv.dataSource = self.dataSource;
+        tv.delegate = self.delegate;
+    } else if ([self.scrollView isKindOfClass:[UICollectionView class]]) {
+        UICollectionView *cv = (UICollectionView *)self.scrollView;
+        cv.dataSource = self.dataSource;
+        cv.delegate = self.delegate;
+    }
+}
+
+#pragma mark -
 #pragma mark Public Templates
+
+- (UIScrollView *)scrollView
+{
+    NSAssert(false, @"Subclasses of BaseScrollViewController must overwrite the scrollView method");
+    return nil;
+}
 
 - (void)handleParams
 {
@@ -45,14 +83,29 @@
             self.objects = array;
         }
         
-        [self refreshDataSource];
+        [self refreshProtocol];
         
     } controller:self];
 }
 
-//abstract
-- (void)refreshDataSource
+- (void)refreshProtocol
 {
+    self.dataSource.array = self.objects;
+    self.delegate.array = self.objects;
+    [self refreshScrollView];
+}
+
+#pragma mark Helper
+
+- (void)refreshScrollView
+{
+    if ([self.scrollView isKindOfClass:[UITableView class]]) {
+        UITableView *tv = (UITableView *)self.scrollView;
+        [tv reloadData];
+    } else if ([self.scrollView isKindOfClass:[UICollectionView class]]) {
+        UICollectionView *cv = (UICollectionView *)self.scrollView;
+        [cv reloadData];
+    }
 }
 
 #pragma mark -
@@ -86,6 +139,25 @@
     }
     
     return _dataSource;
+}
+
+- (ArrayDelegate *)delegate
+{
+    if (!_delegate) {
+        _delegate = [[ArrayDelegate alloc] initWithArray:self.objects cellClass:self.cellClass];
+    }
+    return _delegate;
+    
+}
+
+- (UICollectionView *)collectionView
+{
+    return nil;
+}
+
+- (UITableView *)tableView
+{
+    return nil;
 }
 
 @end

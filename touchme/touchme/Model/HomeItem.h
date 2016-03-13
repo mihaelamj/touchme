@@ -6,18 +6,15 @@
 //  Copyright © 2016 Mihaela Mihaljevic Jakic. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseItem.h"
 
 //enum
 #import "HomeItemType.h"
 
-//block types
-#import "BlockTypes.h"
-
 //for UIImage
 #import <UIKit/UIKit.h>
 
-@interface HomeItem : NSObject
+@interface HomeItem : BaseItem
 
 - (instancetype)initWithType:(HomeItemType)type;
 
@@ -26,7 +23,5 @@
 @property (nonatomic, readonly) HomeItemType type;
 @property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) UIImage *image;
-
-@property (nonatomic,copy) SimpleBlock actionBlock;
 
 @end

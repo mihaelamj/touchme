@@ -27,8 +27,13 @@
 "HomeItemType_CollectionView Title" = "Collection View";
 "HomeItemType_View Title" = "Plain View";
 
-//Subviews
+//Subviews - ColorItemCellSubview
 "Color Image View Accessibility Label" = "Color Image View";
 "Color Name Label Accessibility Label" = "Color Name Label";
 "ColorHex Label Accessibility Label" = "Color Hex Label";
 "Palette Name Label Accessibility Label" = "Palette Name Label";
+
+//Subviews - PaletteCellSubview
+"Palette Image View Accessibility Label" = "Palette Image View";
+"Palette Name Label Accessibility Label" = "Palette Name Label";
+"Number of Colors Label Accessibility Label" = "Number of Colors Label";
