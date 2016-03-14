@@ -41,12 +41,8 @@
     //image on the right, center
     [self.paletteImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.mas_centerY);
-        
         make.height.equalTo(self.mas_height).multipliedBy(0.72);
         make.width.equalTo(self.mas_width).multipliedBy(0.5);
-        
-//        make.height.equalTo(@(kPaletteImageHeight));
-//        make.width.equalTo(@(kPaletteImageWidth));
         make.right.equalTo(self.mas_right).with.offset(-kDefaultCellOffset*OFFSET_MULTI);
     }];
     
@@ -109,7 +105,7 @@
 {
     [super layoutSubviews];
     
-    //make it a circle (here, because we don't know the frame before)
+    //make it rounded (here, because we don't know the frame before)
     self.paletteImageView.layer.cornerRadius = 4.0f;
     self.paletteImageView.layer.masksToBounds = YES;
     self.paletteImageView.layer.borderColor = [UIColor colorWithStyle:TMColorStyle_GrayDark].CGColor;

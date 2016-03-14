@@ -10,8 +10,6 @@
 
 @interface BaseTableViewCell ()
 
-//@property (nonatomic, strong) CellSubview *cellContentView;
-
 @end
 
 @implementation BaseTableViewCell

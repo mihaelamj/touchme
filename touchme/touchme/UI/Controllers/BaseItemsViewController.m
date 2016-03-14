@@ -89,15 +89,14 @@
 
 - (void)loadItems
 {
-    if (!self.storeClass) {
-        return;
-    }
-    
     if ([self.objects count]) {
         [self refreshProtocol];
         return;
     }
     
+    if (!self.storeClass) {
+        return;
+    }
     
     [self.storeClass itemsWithCompletion:^(NSArray *array, NSError *error) {
         if (error) {
