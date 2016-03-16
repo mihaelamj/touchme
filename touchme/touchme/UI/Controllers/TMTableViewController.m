@@ -11,9 +11,6 @@
 //main View
 #import "TMTableView.h"
 
-//data source
-#import "ArrayDataSource.h"
-
 @interface TMTableViewController ()
 
 @property (nonatomic, strong) TMTableView *mainView;

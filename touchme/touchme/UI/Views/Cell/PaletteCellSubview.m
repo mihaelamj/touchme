@@ -36,7 +36,24 @@
     [self addSubview:self.numberOfColorsLabel];
 }
 
+//LayoutOptions_Horizontal = (1 << 0),
+//LayoutOptions_Vertical = (1 << 1)
+
 - (void)setSubviewConstraints
+{
+    if (self.layoutOptions & LayoutOptions_Horizontal) {
+        [self layoutHorizontally];
+    } else if (self.layoutOptions & LayoutOptions_Vertical) {
+        [self layoutVertically];
+    } else {
+        [self layoutHorizontally];
+    }
+
+}
+
+#pragma mark Helper
+
+- (void)layoutHorizontally
 {
     //image on the right, center
     [self.paletteImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -59,6 +76,11 @@
         make.left.equalTo(self.mas_left).with.offset(kDefaultCellOffset*OFFSET_MULTI);
         make.right.equalTo(self.paletteImageView.mas_left).with.offset(-kDefaultCellOffset*OFFSET_MULTI);
     }];
+}
+
+- (void)layoutVertically
+{
+    [self layoutHorizontally];
 }
 
 #pragma mark Data

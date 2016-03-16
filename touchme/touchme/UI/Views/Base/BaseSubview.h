@@ -37,7 +37,7 @@
 - (void)addCustomSubviews;
 - (void)setSubviewConstraints;
 
-@property (nonatomic) NSInteger options;
+@property (nonatomic, readonly) NSInteger options;
 
 //initializers
 - (instancetype)initWithFrame:(CGRect)frame options:(NSInteger)options;

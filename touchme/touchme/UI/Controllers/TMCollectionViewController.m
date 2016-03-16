@@ -24,7 +24,7 @@
 
 - (UIScrollView *)scrollView
 {
-    return nil;
+    return self.mainView.collectionView;
 }
 
 #pragma mark -

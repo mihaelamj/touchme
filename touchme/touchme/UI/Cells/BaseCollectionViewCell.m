@@ -35,20 +35,24 @@
 
 - (void)addCustomSubviews
 {
+    self.contentView.backgroundColor = [UIColor colorWithStyle:TMColorStyle_GrayLight];
     if (self.cellContentView) {
+        self.cellContentView.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:self.cellContentView];
     }
 }
 
 - (void)setSubviewConstraints
 {
-    //occupy the whole area, with offsets
-    [self.cellContentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView.mas_left);
-        make.right.equalTo(self.contentView.mas_right);
-        make.top.equalTo(self.contentView.mas_top);
-        make.bottom.equalTo(self.contentView.mas_bottom);
-    }];
+    if (self.cellContentView) {
+        //occupy the whole area, with offsets
+        [self.cellContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.contentView.mas_left);
+            make.right.equalTo(self.contentView.mas_right);
+            make.top.equalTo(self.contentView.mas_top);
+            make.bottom.equalTo(self.contentView.mas_bottom);
+        }];
+    }
 }
 
 #pragma mark Data
@@ -102,7 +106,7 @@
     if (!_cellContentView) {
         Class contentClass = [self.class cellSubviewClass];
         if (contentClass) {
-            _cellContentView = [[contentClass alloc] init];
+            _cellContentView = [[contentClass alloc] initWithOptions:LayoutOptions_Vertical];
         }
     }
     return _cellContentView;

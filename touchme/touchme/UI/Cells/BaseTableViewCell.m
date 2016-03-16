@@ -54,7 +54,6 @@
 - (void)setSubviewConstraints
 {
     if (self.cellContentView) {
-        
         //occupy the whole area, with offsets
         [self.cellContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.contentView.mas_left);
@@ -116,7 +115,7 @@
     if (!_cellContentView) {
         Class contentClass = [self.class cellSubviewClass];
         if (contentClass) {
-            _cellContentView = [[contentClass alloc] init];
+            _cellContentView = [[contentClass alloc] initWithOptions:LayoutOptions_Horizontal];
         }
     }
     return _cellContentView;

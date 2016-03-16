@@ -10,7 +10,10 @@
 
 @implementation CellSubview
 
-#pragma mark Height
+#pragma mark -
+#pragma Public Methods
+
+#pragma mark Size
 
 - (CGFloat)heightWithCustomObject:(id)customObject
 {
@@ -26,6 +29,14 @@
 
 - (void)cleanView
 {
+}
+
+#pragma mark -
+#pragma Public Properties
+
+- (LayoutOptions)layoutOptions
+{
+    return (LayoutOptions)self.options;
 }
 
 @end

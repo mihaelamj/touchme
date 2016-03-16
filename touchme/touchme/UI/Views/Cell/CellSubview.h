@@ -8,12 +8,16 @@
 
 #import "BaseSubview.h"
 
+//layout options
+#import "LayoutOptions.h"
+
 @interface CellSubview : BaseSubview
 
 //abstract
 - (void)cleanView;
 - (CGFloat)heightWithCustomObject:(id)customObject;
-
 + (CGFloat)recomendedWidth;
+
+@property (nonatomic, readonly) LayoutOptions layoutOptions;
 
 @end

@@ -148,6 +148,7 @@
 		A90D169F1C947C78003C4FFC /* UILabel+TMStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+TMStyle.m"; path = "Style/UILabel+TMStyle.m"; sourceTree = "<group>"; };
 		A90D16A11C94867A003C4FFC /* MMJColorPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMJColorPalette.h; path = Model/MMJColorPalette.h; sourceTree = "<group>"; };
 		A90D16A21C94867A003C4FFC /* MMJColorPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMJColorPalette.m; path = Model/MMJColorPalette.m; sourceTree = "<group>"; };
+		A93817651C9838F300EB65AE /* LayoutOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutOptions.h; sourceTree = "<group>"; };
 		A94225241C94899C007E59CD /* ColorPalettesTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorPalettesTableView.h; path = UI/Views/Main/ColorPalettesTableView.h; sourceTree = "<group>"; };
 		A94225251C94899C007E59CD /* ColorPalettesTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorPalettesTableView.m; path = UI/Views/Main/ColorPalettesTableView.m; sourceTree = "<group>"; };
 		A94225271C948B5E007E59CD /* TM_Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TM_Keys.h; path = Types/TM_Keys.h; sourceTree = "<group>"; };
@@ -300,6 +301,7 @@
 				A90D167D1C946378003C4FFC /* NSString+TMRouteType.h */,
 				A90D167E1C946378003C4FFC /* NSString+TMRouteType.m */,
 				A94225271C948B5E007E59CD /* TM_Keys.h */,
+				A93817651C9838F300EB65AE /* LayoutOptions.h */,
 			);
 			name = Types;
 			sourceTree = "<group>";
