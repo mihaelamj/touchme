@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (TMRouteType)
-
 //enum
 #import "TMRouteType.h"
+
+@interface NSString (TMRouteType)
 
 + (NSString *)nameForRouteType:(TMRouteType)routeType;
 

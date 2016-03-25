@@ -21,5 +21,4 @@
     return [ColorItemCellSubview class];
 }
 
-
 @end

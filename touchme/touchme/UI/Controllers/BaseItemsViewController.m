@@ -64,7 +64,7 @@
 
 - (UIScrollView *)scrollView
 {
-    NSAssert(false, @"Subclasses of BaseScrollViewController must overwrite the scrollView method");
+    NSAssert(NO, @"Subclasses of BaseScrollViewController must overwrite the scrollView method");
     return nil;
 }
 
